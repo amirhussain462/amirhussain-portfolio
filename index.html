@@ -23,12 +23,18 @@
         header h1 {
             margin: 0;
             font-size: 3rem;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.4rem;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #2c3e50;
             padding: 0.5rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color: #fff;
@@ -54,39 +60,52 @@
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
         }
-        .project {
-            margin-bottom: 2rem;
+        .about img {
+            display: block;
+            margin: 1rem auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
         }
-        .project h3 {
-            color: #2980b9;
-            margin-bottom: 0.5rem;
+        .skills ul, .projects ul {
+            list-style: none;
+            padding: 0;
         }
-        .project p {
-            margin-bottom: 1rem;
+        .skills li, .projects li {
+            background: #f4f4f4;
+            margin: 0.5rem 0;
+            padding: 0.75rem;
+            border-left: 5px solid #2980b9;
+            border-radius: 5px;
         }
+        .certifications img {
+            width: 100px;
+            height: auto;
+            margin: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .certifications img:hover {
+            transform: scale(1.1);
+        }
+        /* Project Images Styling */
         .project-images {
             display: flex;
-            gap: 10px;
-            justify-content: center;
             flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 1rem;
         }
         .project-images img {
-            width: 100%;
-            max-width: 250px;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 10px); /* Three images per row */
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
         }
-        .experience {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        .experience img {
-            width: 80px;
-            height: 80px;
-            object-fit: contain;
-            border-radius: 5px;
+        .project-images img:hover {
+            transform: scale(1.05);
         }
         footer {
             text-align: center;
@@ -94,85 +113,74 @@
             background-color: #2c3e50;
             color: #fff;
         }
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
         <h1>Amir Hussain Shaik</h1>
         <p>Electrical Engineer | Lean Six Sigma Black Belt | Automation Specialist</p>
     </header>
     <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
     </nav>
-
+    <!-- About Section -->
+    <section id="about" style="text-align: center;">
+        <div style="display: inline-block; position: relative;">
+            <img src="your-photo.jpg" alt="Amir Hussain Shaik" style="width: 150px; height: 150px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+            <div style="position: absolute; top: -10px; left: -10px; width: 170px; height: 170px; border: 3px dashed #2980b9; border-radius: 50%; z-index: -1;"></div>
+        </div>
+        <h2>About Me</h2>
+        <p>I am Amir Hussain Shaik, a professional Electrical Engineer with 9+ years of experience...</p>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Project Management and Site Operations</li>
+            <li>Electro-Mechanical System Installation</li>
+            <li>Lean Six Sigma (Black Belt Certified)</li>
+            <li>Troubleshooting and Preventive Maintenance</li>
+        </ul>
+    </section>
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>Key Projects</h2>
         <div class="project">
-            <h3>Engineering Support and Operations Management</h3>
-            <p><strong>Client:</strong> ALS Sites in Saudi Arabia | <strong>Role:</strong> Lead Engineer | <strong>Duration:</strong> 2023-Present</p>
-            <p>Led and coordinated the Saudi Arabia Engineering team, ensured seamless technical operations across sites, and trained team members for optimized performance.</p>
+            <h3>Kardex Electrical Sorting System</h3>
+            <p>Successfully installed a high-capacity material sorting machine in Abu Dhabi.</p>
             <div class="project-images">
-                <img src="images/saudi_team1.jpg" alt="Saudi Team Image 1">
-                <img src="images/saudi_team2.jpg" alt="Saudi Team Image 2">
-                <img src="images/saudi_team3.jpg" alt="Saudi Team Image 3">
+                <img src="images/kardex1.jpg" alt="Kardex System 1">
+                <img src="images/kardex2.jpg" alt="Kardex System 2">
+                <img src="images/kardex3.jpg" alt="Kardex System 3">
             </div>
         </div>
-        <div class="project">
-            <h3>Car Turn Table Maintenance</h3>
-            <p><strong>Client:</strong> Private Villa, Riyadh | <strong>Role:</strong> Maintenance Engineer | <strong>Duration:</strong> 2023-Present</p>
-            <p>Performed bi-annual maintenance, ensuring optimal car turntable functionality and high client satisfaction through preventive strategies.</p>
-            <div class="project-images">
-                <img src="images/car_turntable1.jpg" alt="Car Turntable Image 1">
-                <img src="images/car_turntable2.jpg" alt="Car Turntable Image 2">
-                <img src="images/car_turntable3.jpg" alt="Car Turntable Image 3">
-            </div>
-        </div>
-        <!-- Additional Projects -->
-        <div class="project">
-            <h3>Kardex Electrical Material Sorting Machine</h3>
-            <p><strong>Client:</strong> SANAD Airo-tech, Abu Dhabi | <strong>Role:</strong> Lead Engineer | <strong>Duration:</strong> March 2024</p>
-            <p>Led installation of Kardex machine, optimizing material handling efficiency by 30% and achieving zero-defect handover.</p>
-            <div class="project-images">
-                <img src="images/kardex1.jpg" alt="Kardex Image 1">
-                <img src="images/kardex2.jpg" alt="Kardex Image 2">
-                <img src="images/kardex3.jpg" alt="Kardex Image 3">
-            </div>
-        </div>
+        <!-- Add additional projects similarly -->
     </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="experience">
-            <img src="images/als_logo.png" alt="ALS Logo">
-            <p><strong>Automation Electrical Engineer</strong> <br> ALS Logistic Solutions LLC, Dubai <br> Feb 2023 - Present</p>
-        </div>
-        <div class="experience">
-            <img src="images/ekfc_logo.png" alt="EKFC Logo">
-            <p><strong>Automation Technician</strong> <br> Emirates Flight Catering, Dubai <br> Oct 2018 – Jan 2023</p>
-        </div>
-        <div class="experience">
-            <img src="images/unidad_logo.png" alt="Unidad Logo">
-            <p><strong>Technical Assistant & Test Administrator</strong> <br> Unidad Technologies & Solutions, India <br> June 2017 – Sept 2018</p>
-        </div>
-        <div class="experience">
-            <img src="images/ifcg_logo.png" alt="IFCG Logo">
-            <p><strong>Technician</strong> <br> International Food & Consumable Goods Co., Jeddah <br> Dec 2014 – Aug 2016</p>
-        </div>
+    <!-- Certifications Section -->
+    <section id="certifications" style="text-align: center;">
+        <h2>Certifications</h2>
+        <a href="lean-six-sigma-yellow-belt.pdf" download>
+            <img src="cert-yellow-belt.jpg" alt="Yellow Belt">
+        </a>
+        <a href="lean-six-sigma-black-belt.pdf" download>
+            <img src="cert-black-belt.jpg" alt="Black Belt">
+        </a>
     </section>
-
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p><strong>Email:</strong> <a href="mailto:amirhussain462@gmail.com">amirhussain462@gmail.com</a></p>
-        <p><strong>Phone:</strong> UAE: +971-547637988 | KSA: +966-508795954</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/amirhussainshaik" target="_blank">linkedin.com/in/amirhussainshaik</a></p>
+        <p>Email: <a href="mailto:amirhussain462@gmail.com">amirhussain462@gmail.com</a></p>
     </section>
-
     <!-- Footer -->
     <footer>
         <p>Portfolio of Amir Hussain Shaik | Powered by GitHub Pages</p>
