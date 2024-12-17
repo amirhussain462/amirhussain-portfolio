@@ -89,6 +89,24 @@
         .certifications img:hover {
             transform: scale(1.1);
         }
+        /* Project Images Styling */
+        .project-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+        .project-images img {
+            width: calc(33.333% - 10px); /* Three images per row */
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-images img:hover {
+            transform: scale(1.05);
+        }
         footer {
             text-align: center;
             padding: 1rem;
@@ -116,25 +134,13 @@
         <a href="#contact">Contact</a>
     </nav>
     <!-- About Section -->
-    <section id="about" style="text-align: center; padding: 2rem;">
-    <div style="display: inline-block; position: relative;">
-        <!-- Profile Photo -->
-        <img src="your-photo.jpg" alt="Amir Hussain Shaik" 
-             style="width: 150px; height: 150px; border-radius: 50%; 
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
-        <!-- Decorative Ring -->
-        <div style="position: absolute; top: -10px; left: -10px; 
-                    width: 170px; height: 170px; border: 3px dashed #2980b9; 
-                    border-radius: 50%; z-index: -1;"></div>
-    </div>
-    <!-- About Text -->
-    <h2 style="margin-top: 1rem; color: #2c3e50;">About Me</h2>
-    <p style="max-width: 700px; margin: 1rem auto; font-size: 1.1rem;">
-        I am Amir Hussain Shaik, a professional Electrical Engineer with 9+ years 
-        of experience in automation and electro-mechanical systems. I specialize in 
-        material handling, Lean Six Sigma methodologies, and troubleshooting across 
-        Saudi Arabia, UAE, and India.
-    </p>
+    <section id="about" style="text-align: center;">
+        <div style="display: inline-block; position: relative;">
+            <img src="your-photo.jpg" alt="Amir Hussain Shaik" style="width: 150px; height: 150px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+            <div style="position: absolute; top: -10px; left: -10px; width: 170px; height: 170px; border: 3px dashed #2980b9; border-radius: 50%; z-index: -1;"></div>
+        </div>
+        <h2>About Me</h2>
+        <p>I am Amir Hussain Shaik, a professional Electrical Engineer with 9+ years of experience...</p>
     </section>
     <!-- Skills Section -->
     <section id="skills">
@@ -144,71 +150,36 @@
             <li>Electro-Mechanical System Installation</li>
             <li>Lean Six Sigma (Black Belt Certified)</li>
             <li>Troubleshooting and Preventive Maintenance</li>
-            <li>Inventory and Spare Parts Management</li>
-            <li>Client and Supplier Coordination</li>
         </ul>
     </section>
     <!-- Projects Section -->
     <section id="projects">
         <h2>Key Projects</h2>
-        <ul>
-            <li><strong>Kardex Electrical Sorting System</strong> - Successfully installed a high-capacity material sorting machine in Abu Dhabi.</li>
-            <li><strong>Saudi Arabia Engineering Team</strong> - Led the technical team, coordinated project operations, and trained engineers.</li>
-            <li><strong>Conveyor Systems Installation</strong> - Managed installation of conveyor solutions for a major storage facility.</li>
-            <li><strong>Car Turntable Maintenance</strong> - Conducted preventive maintenance for premium private villa clients in Riyadh.</li>
-        </ul>
+        <div class="project">
+            <h3>Kardex Electrical Sorting System</h3>
+            <p>Successfully installed a high-capacity material sorting machine in Abu Dhabi.</p>
+            <div class="project-images">
+                <img src="images/kardex1.jpg" alt="Kardex System 1">
+                <img src="images/kardex2.jpg" alt="Kardex System 2">
+                <img src="images/kardex3.jpg" alt="Kardex System 3">
+            </div>
+        </div>
+        <!-- Add additional projects similarly -->
     </section>
     <!-- Certifications Section -->
     <section id="certifications" style="text-align: center;">
-    <h2 style="color: #2c3e50;">Certifications</h2>
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
-        <!-- Certificate 1 -->
-        <div>
-            <a href="lean-six-sigma-yellow-belt.pdf" target="_blank" download>
-                <img src="cert-yellow-belt.jpg" alt="Lean Six Sigma Yellow Belt" 
-                     style="width: 200px; height: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
-            </a>
-            <p>Lean Six Sigma Yellow Belt</p>
-        </div>
-        <!-- Certificate 2 -->
-        <div>
-            <a href="lean-six-sigma-green-belt.pdf" target="_blank" download>
-                <img src="cert-green-belt.jpg" alt="Lean Six Sigma Green Belt" 
-                     style="width: 200px; height: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
-            </a>
-            <p>Lean Six Sigma Green Belt</p>
-        </div>
-        <!-- Certificate 3 -->
-        <div>
-            <a href="lean-six-sigma-black-belt.pdf" target="_blank" download>
-                <img src="cert-black-belt.jpg" alt="Lean Six Sigma Black Belt" 
-                     style="width: 200px; height: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
-            </a>
-            <p>Lean Six Sigma Black Belt</p>
-        </div>
-        <!-- Certificate 4 -->
-        <div>
-            <a href="IOSH-MS-and-NEBOSH-HSW-certificates.pdf" target="_blank" download>
-                <img src="cert-iosh-nebosh.jpg" alt="IOSH and NEBOSH Certificates" 
-                     style="width: 200px; height: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
-            </a>
-            <p>IOSH & NEBOSH Certificates</p>
-       	   </div>
-   		</div>
-	</section>
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <p><strong>Automation Electrical Engineer</strong> (Feb 2023–Present) - ALS Logistic Solutions LLC, Dubai</p>
-        <p><strong>Automation Technician</strong> (Oct 2018–Jan 2023) - Emirates Flight Catering, Dubai</p>
-        <p><strong>Technician</strong> (Dec 2014–Aug 2016) - IFCG, Jeddah</p>
+        <h2>Certifications</h2>
+        <a href="lean-six-sigma-yellow-belt.pdf" download>
+            <img src="cert-yellow-belt.jpg" alt="Yellow Belt">
+        </a>
+        <a href="lean-six-sigma-black-belt.pdf" download>
+            <img src="cert-black-belt.jpg" alt="Black Belt">
+        </a>
     </section>
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p><strong>Email:</strong> <a href="mailto:amirhussain462@gmail.com">amirhussain462@gmail.com</a></p>
-        <p><strong>Phone:</strong> UAE: +971-547637988 | KSA: +966-508795954</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/amirhussainshaik" target="_blank">linkedin.com/in/amirhussainshaik</a></p>
+        <p>Email: <a href="mailto:amirhussain462@gmail.com">amirhussain462@gmail.com</a></p>
     </section>
     <!-- Footer -->
     <footer>
