@@ -78,6 +78,26 @@
             padding: 0.75rem;
             border-left: 5px solid #2980b9;
             border-radius: 5px;
+	}
+        .project-images {
+       	    display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+            gap: 15px;
+            margin-top: 1rem;
+        }
+
+        .project-images img {
+            width: 100%; /* Ensure images fit within their grid cells */
+            height: 200px; /* Set a fixed height for uniformity */
+            object-fit: cover; /* Maintain aspect ratio and crop excess */
+            border-radius: 10px; /* Add rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for aesthetics */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+        }
+
+        .project-images img:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
         }
         .certifications img {
             width: 100px;
@@ -150,7 +170,7 @@
     </section>
     <!-- Projects Section -->
     <!-- Projects Section -->
-<section id="projects">
+   <section id="projects">
     <h2>Key Projects</h2>
     <!-- Project 1 -->
     <div class="project">
@@ -190,8 +210,8 @@
             <img src="images/car_turntable1.jpg" alt="Car Turntable Image 1">
             <img src="images/car_turntable2.jpg" alt="Car Turntable Image 2">
             <img src="images/car_turntable3.jpg" alt="Car Turntable Image 3">
+          </div>
         </div>
-      </div>
     </section>
     <!-- Certifications Section -->
     <section id="certifications" style="text-align: center;">
