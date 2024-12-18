@@ -79,26 +79,72 @@
             border-left: 5px solid #2980b9;
             border-radius: 5px;
 	}
-        .project-images {
-       	    display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
-            gap: 15px;
-            margin-top: 1rem;
+        /* Group Styling */
+	.project-group {
+            margin-bottom: 2rem; /* Add spacing between project groups */
+            padding: 1.5rem;
+            background-color: #f9f9f9; /* Light background for each group */
+            border: 1px solid #ddd; /* Subtle border */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+         }
+
+        .project-group h3 {
+           color: #2c3e50; /* Darker blue shade for headers */
+           border-bottom: 2px solid #2980b9; /* Underline for group title */
+           padding-bottom: 0.5rem;
+           margin-bottom: 1rem;
+           font-size: 1.6rem;
+         }
+
+       /* Individual Project Styling */
+        .project {
+          margin-bottom: 1.5rem; /* Space between projects */
+          padding: 1rem;
+          background-color: #fff; /* White background for projects */
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each project */
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+
+      .project:hover {
+          transform: translateY(-5px); /* Lift effect on hover */
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
         }
 
-        .project-images img {
-            width: 100%; /* Ensure images fit within their grid cells */
-            height: 200px; /* Set a fixed height for uniformity */
-            object-fit: cover; /* Maintain aspect ratio and crop excess */
-            border-radius: 10px; /* Add rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for aesthetics */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+      .project h4 {
+          color: #2980b9; /* Blue shade for project titles */
+          font-size: 1.4rem;
+          margin-bottom: 0.5rem;
         }
 
-        .project-images img:hover {
-            transform: scale(1.05); /* Slightly enlarge on hover */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-        }
+      .project p {
+         color: #555; /* Dark gray for descriptions */
+         line-height: 1.5;
+         font-size: 1rem;
+       }
+
+      /* Project Images Styling */
+     .project-images {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+        gap: 15px; /* Space between grid items */
+        margin-top: 1rem;
+      }
+
+     .project-images img {
+        width: 100%; /* Fit images within their grid cells */
+        height: 200px; /* Uniform height */
+        object-fit: cover; /* Crop images while maintaining aspect ratio */
+        border-radius: 10px; /* Rounded corners for images */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+      }
+
+    .project-images img:hover {
+        transform: scale(1.05); /* Enlarge slightly on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+      }
         .certifications img {
             width: 100px;
             height: auto;
