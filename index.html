@@ -60,87 +60,96 @@
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
         }
-        /* About Section Styling */
-      .about-section {
-            background-color: #f9f9f9;
-            padding: 3rem 1.5rem;
-            font-family: 'Arial', sans-serif;
-            color: #333;
-        }
+ 	     /* About Section Styling */
+	.about-section {
+    		background-color: #f9f9f9;
+    		padding: 3rem 1.5rem;
+    		font-family: 'Arial', sans-serif;
+    		color: #333;
+	}
 
-      .about-container {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-            gap: 2rem;
-        }
+	.about-container {
+    		display: flex;
+    		flex-wrap: wrap;
+    		align-items: center;
+    		justify-content: space-between;
+    		max-width: 1200px;
+    		margin: 0 auto;
+    		gap: 2rem;
+	}
 
-       /* About Text Content */
-       .about-content {
-            flex: 1 1 50%; /* Takes up 50% width */
-            max-width: 600px;
-        }
+		/* About Text Content */
+	.about-content {
+    		flex: 1 1 50%; /* Takes up 50% width */
+    		max-width: 600px;
+		text-align: justify; /* Justify text alignment */
+	}
 
-       .about-content h2 {
-            color: #2980b9; /* Modern blue heading */
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
-        }
+	.about-content h2 {
+    		color: #2980b9; /* Modern blue heading */
+    		font-size: 2.2rem;
+    		margin-bottom: 1rem;
+    		text-align: left; /* Keep headings aligned to the left */
+	}
 
-       .about-content p {
-            line-height: 1.6;
-            margin-bottom: 1rem;
-           font-size: 1.1rem;
-           color: #555;
-         }
+	.about-content p {
+    		line-height: 1.6;
+    		margin-bottom: 1rem;
+    		font-size: 1.1rem;
+    		color: #555;
+    		text-align: justify; /* Justify the paragraphs */
+	}
 
-       .about-content strong {
-            color: #2c3e50;
-        }
+	.about-content strong {
+    		color: #2c3e50;
+	}
 
-       .about-content em {
-            font-style: italic;
-            color: #7f8c8d;
-        }
+	.about-content em {
+    		font-style: italic;
+    		color: #7f8c8d;
+	}
 
-        /* About Image */
-        .about-image {
-            flex: 1 1 40%; /* Takes up 40% width */
-            max-width: 400px;
-         }
+		/* About Image */
+	.about-image {
+    		flex: 1 1 40%; /* Takes up 40% width */
+    		max-width: 400px;
+	}
 
-         .about-image img {
-             width: 100%;
-             height: auto;
-             border-radius: 10px;
-             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-             object-fit: cover;
-             transition: transform 0.3s ease;
-          } 
+	.about-image img {
+    		width: 100%;
+    		height: auto;
+    		border-radius: 10px;
+    		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    		object-fit: cover;
+    		transition: transform 0.3s ease;
+	}
 
-         .about-image img:hover {
-              transform: scale(1.05); /* Subtle zoom effect on hover */
-          }
+	.about-image img:hover {
+    		transform: scale(1.05); /* Subtle zoom effect on hover */
+	}
 
-        /* Responsive Design */
-          @media (max-width: 768px) {
-        .about-container {
-              flex-direction: column;
-              text-align: center;
-          }
+		/* Responsive Design */
+	@media (max-width: 768px) {
+    	.about-container {
+        	flex-direction: column;
+        	text-align: center;
+    	}
 
-         .about-content, .about-image {
-               flex: 1 1 100%;
-               max-width: 100%;
-          }
+	.about-content, .about-image {
+        	flex: 1 1 100%;
+        	max-width: 100%;
+    	}
 
-          .about-content h2 {
-                font-size: 2rem;
-          }
-       }
+    	.about-content h2 {
+        	font-size: 2rem;
+        	text-align: center; /* Center the heading for smaller screens */
+    	}
+
+    	.about-content p {
+        	text-align: justify; /* Ensure justification still applies */
+    	}
+    }
+
         .skills ul, .projects ul {
             list-style: none;
             padding: 0;
