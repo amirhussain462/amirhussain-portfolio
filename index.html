@@ -83,8 +83,98 @@
             margin-bottom: 2rem;
             font-size: 2.2rem;
         }
+	 /* Gallery Section Styling */
+        #technical-gallery {
+            padding: 3rem 1.5rem;
+            background-color: #f7f9fc;
+            color: #2c3e50;
+            text-align: center;
+        }
 
-        /* About Section Styling */
+        #technical-gallery h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: #d35400;
+        }
+
+        #technical-gallery p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #555555;
+        }
+
+        .gallery-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            position: relative;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px; /* Fixed height for uniformity */
+            object-fit: cover; /* Ensures proper cropping and centering */
+            border-radius: 8px;
+        }
+
+        .gallery-item .description {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: #34495e;
+        }
+
+        .view-gallery-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #d35400;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-gallery-button:hover {
+            background-color: #e67e22;
+        }
+
+        .add-photo-section {
+            margin-top: 3rem;
+            text-align: center;
+            border-top: 2px solid #dcdcdc;
+            padding-top: 2rem;
+        }
+
+        .add-photo-section textarea,
+        .add-photo-section input {
+            width: 90%;
+            margin-bottom: 1rem;
+        }
+
+        .add-photo-section button {
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #2c3e50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-photo-section button:hover {
+            background-color: #34495e;
+        } 
+	/* About Section Styling */
         .about-section {
             background-color: #e3f2fd;
             padding: 3rem 2rem;
@@ -314,8 +404,9 @@
     <nav>
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>       
+        <a href="#experience">Experience</a>
+	<a href="#projects">Projects</a>
+	<a href="#gallery">Photo Gallery</a>
 	<a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -369,6 +460,46 @@
 	<div class="skill-item">Quality Control and Assurance</div>
       </div>
     </section>
+        <!-- Experience Section -->
+    <section id="experience">
+    <h2>Professional Experience</h2>
+
+    <!-- Job 1 -->
+    <div class="job">
+        <h3>Automation Electrical Engineer</h3>
+        <p><strong>ALS Logistic Solutions LLC, Dubai, UAE</strong> | Feb 2023 – Present</p>
+        <p>Leading the installation, commissioning, and troubleshooting of electro-mechanical and automation systems for high-profile clients, ensuring optimal performance and reliability.</p>
+    </div>
+    <hr>
+
+    <!-- Job 2 -->
+    <div class="job">
+        <h3>Automation Technician</h3>
+        <p><strong>Emirates Flight Catering (EKFC) LLC, Dubai, UAE</strong> | Oct 2018 – Jan 2023</p>
+        <p>Performed preventive maintenance, diagnostics, and system repairs for critical automation systems, minimizing downtime and ensuring operational excellence in a high-demand environment.</p>
+    </div>
+    <hr>
+
+    <!-- Job 3 -->
+    <div class="job">
+        <h3>Technical Assistant and Test Centre Administrator</h3>
+        <p><strong>Unidad Technologies & Solutions Pvt. Ltd., India</strong> | June 2017 – Sept 2018</p>
+        <p>Assisted in configuring and maintaining test setups for automation projects, while providing technical support and managing administrative tasks efficiently.</p>
+    </div>
+    <hr>
+
+    <!-- Job 4 -->
+    <div class="job">
+        <h3>Technician</h3>
+        <p><strong>International Food & Consumable Goods Co. (IFCG), Jeddah, Saudi Arabia</strong> | Dec 2014 – Aug 2016</p>
+        <p>Conducted maintenance and repairs on industrial systems, ensuring their seamless operation and contributing to the company’s production targets.</p>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta">
+        <p>With a proven track record across diverse roles and industries, I bring a wealth of expertise in automation, maintenance, and system optimization. Let’s connect to drive innovative solutions for your projects!</p>
+    </div>
+  </section>
     <!-- Projects Section -->
     <!-- Projects Section -->
     <section id="projects">
@@ -445,47 +576,84 @@
            </div>
         </div>
     </section>
-    <!-- Experience Section -->
-    <section id="experience">
-    <h2>Professional Experience</h2>
+	<!-- Technical Photo Gallery Section -->
+<section id="technical-gallery">
+    <h2>Technical Photo Gallery</h2>
+    <p>Explore images showcasing my technical expertise and projects.</p>
 
-    <!-- Job 1 -->
-    <div class="job">
-        <h3>Automation Electrical Engineer</h3>
-        <p><strong>ALS Logistic Solutions LLC, Dubai, UAE</strong> | Feb 2023 – Present</p>
-        <p>Leading the installation, commissioning, and troubleshooting of electro-mechanical and automation systems for high-profile clients, ensuring optimal performance and reliability.</p>
-    </div>
-    <hr>
-
-    <!-- Job 2 -->
-    <div class="job">
-        <h3>Automation Technician</h3>
-        <p><strong>Emirates Flight Catering (EKFC) LLC, Dubai, UAE</strong> | Oct 2018 – Jan 2023</p>
-        <p>Performed preventive maintenance, diagnostics, and system repairs for critical automation systems, minimizing downtime and ensuring operational excellence in a high-demand environment.</p>
-    </div>
-    <hr>
-
-    <!-- Job 3 -->
-    <div class="job">
-        <h3>Technical Assistant and Test Centre Administrator</h3>
-        <p><strong>Unidad Technologies & Solutions Pvt. Ltd., India</strong> | June 2017 – Sept 2018</p>
-        <p>Assisted in configuring and maintaining test setups for automation projects, while providing technical support and managing administrative tasks efficiently.</p>
-    </div>
-    <hr>
-
-    <!-- Job 4 -->
-    <div class="job">
-        <h3>Technician</h3>
-        <p><strong>International Food & Consumable Goods Co. (IFCG), Jeddah, Saudi Arabia</strong> | Dec 2014 – Aug 2016</p>
-        <p>Conducted maintenance and repairs on industrial systems, ensuring their seamless operation and contributing to the company’s production targets.</p>
+    <!-- Gallery Preview -->
+    <div class="gallery-preview" id="gallery-preview">
+        <!-- Placeholder for photos -->
+        <div class="gallery-item">
+            <img src="photo1-thumbnail.jpg" alt="Technical Work 1">
+            <p class="description">This is a sample description for the first image.</p>
+        </div>
     </div>
 
-    <!-- Call to Action -->
-    <div class="cta">
-        <p>With a proven track record across diverse roles and industries, I bring a wealth of expertise in automation, maintenance, and system optimization. Let’s connect to drive innovative solutions for your projects!</p>
+    <!-- Add Photos Section -->
+    <a href="#add-photo" class="view-gallery-button" id="add-photo-toggle">Add Photos</a>
+    <div class="add-photo-section" id="add-photo-section" style="display: none;">
+        <textarea id="photo-urls" placeholder="Enter photo URLs separated by commas"></textarea><br>
+        <textarea id="photo-description" placeholder="Write about the image or group of images"></textarea><br>
+        <button id="add-photos">Add Photos</button>
     </div>
-  </section>
-	<!-- Certifications Section -->
+</section>
+
+<script>
+    // Toggling the "Add Photo" Section
+    const addPhotoToggle = document.getElementById('add-photo-toggle');
+    const addPhotoSection = document.getElementById('add-photo-section');
+    const galleryPreview = document.getElementById('gallery-preview');
+    const photoUrlsInput = document.getElementById('photo-urls');
+    const photoDescriptionInput = document.getElementById('photo-description');
+    const addPhotosButton = document.getElementById('add-photos');
+
+    addPhotoToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        addPhotoSection.style.display = addPhotoSection.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Adding New Photos Dynamically
+    addPhotosButton.addEventListener('click', () => {
+        const photoUrls = photoUrlsInput.value.trim();
+        const description = photoDescriptionInput.value.trim();
+
+        if (!photoUrls) return alert('Please enter photo URLs.');
+        if (!description) return alert('Please provide a description.');
+
+        const photoArray = photoUrls.split(',').map(url => url.trim());
+
+        photoArray.forEach(url => {
+            // Create gallery item
+            const galleryItem = document.createElement('div');
+            galleryItem.className = 'gallery-item';
+
+            // Create image element
+            const newImg = document.createElement('img');
+            newImg.src = url;
+            newImg.alt = 'Uploaded Technical Work';
+
+            // Add description
+            const desc = document.createElement('p');
+            desc.className = 'description';
+            desc.textContent = description;
+
+            // Append image and description to gallery item
+            galleryItem.appendChild(newImg);
+            galleryItem.appendChild(desc);
+
+            // Append gallery item to gallery preview
+            galleryPreview.appendChild(galleryItem);
+        });
+
+        // Clear inputs after adding
+        photoUrlsInput.value = '';
+        photoDescriptionInput.value = '';
+        alert('Photos and description added successfully!');
+    });
+</script>
+
+    <!-- Certifications Section -->
     <section id="certifications" style="text-align: center;">
     <h2 style="color: #2c3e50;">Certifications</h2>
     <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
