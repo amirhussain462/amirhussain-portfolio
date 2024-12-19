@@ -190,56 +190,63 @@
             text-align: justify;
         }
 
-        /* Project Section Styling */
-        #projects {
-            padding: 3rem 1.5rem;
-            background-color: #fff3e0;
-            color: #ff8f00;
-        }
+      	/* Project Section Styling */
+	#projects {
+    		padding: 3rem 1.5rem;
+    		background-color: #fff3e0;
+    		color: #ff8f00;
+	}
 
-        #projects h2 {
-            font-size: 2.2rem;
-            margin-bottom: 2rem;
-        }
+	#projects h2 {
+    		font-size: 2.2rem;
+    		margin-bottom: 2rem;
+	}
 
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
+	.project-grid {
+    		display: grid;
+    		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    		gap: 2rem;
+	}
 
-        .project-item {
-            background: #ffffff;
-            border: 1px solid #ffe0b2;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
+	.project-item {
+    		background: #ffffff;
+    		border: 1px solid #ffe0b2;
+    		border-radius: 10px;
+    		overflow: hidden;
+    		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    		transition: transform 0.3s;
+	}
 
-        .project-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 1px solid #ffe0b2;
-        }
+	.project-item:hover {
+    		transform: scale(1.05);
+	}
 
-        .project-item:hover {
-            transform: scale(1.05);
-        }
+	.project-item h3 {
+    		font-size: 1.5rem;
+    		color: #ff8f00;
+    		margin: 1rem;
+	}
 
-        .project-item h3 {
-            font-size: 1.5rem;
-            color: #ff8f00;
-            margin: 1rem;
-        }
+	.project-item p {
+    		font-size: 1.1rem;
+    		color: #444;
+    		margin: 1rem;
+	}
 
-        .project-item p {
-            font-size: 1.1rem;
-            color: #444;
-            margin: 1rem;
-        }
+	.project-photos {
+    		display: flex;
+    		justify-content: space-between;
+    		gap: 1rem;
+    		padding: 1rem;
+	}
 
+	.project-photos img {
+    		width: calc(33.33% - 0.66rem); /* Each photo takes one-third of the row */
+    		height: 200px;
+    		object-fit: cover;
+    		border: 1px solid #ffe0b2;
+    		border-radius: 5px;
+	}
         /* Footer Styling */
         footer {
             text-align: center;
@@ -264,7 +271,8 @@
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience<       <a href="#certifications">Certifications</a>
+        <a href="#experience">Experience>       
+	<a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
     </nav>
     <!-- About Section -->
@@ -305,12 +313,16 @@
     <section id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
-        <div class="skill-item">Project Management and Site Operations</div>
-        <div class="skill-item">Electro-Mechanical System Installation</div>
-        <div class="skill-item">Lean Six Sigma (Black Belt Certified)</div>
-        <div class="skill-item">Troubleshooting and Preventive Maintenance</div>
-        <div class="skill-item">Inventory and Spare Parts Management</div>
-        <div class="skill-item">Client and Supplier Coordination</div>
+        <div class="skill-item">Project Lifestyle Management</div>
+        <div class="skill-item">Lean Six Sigma Expertise</div>
+        <div class="skill-item">Equipment Installation and Commissioning</div>
+        <div class="skill-item">Advanced Troubleshooting and Maintenance</div>
+        <div class="skill-item">Client Relationship Management</div>
+        <div class="skill-item">Leadership and Team Management</div>
+	<div class="skill-item">Occupational Health and Safety</div>
+	<div class="skill-item">Technical Documentation and Interpretation</div>
+	<div class="skill-item">Inventory Optimization</div>
+	<div class="skill-item">Quality Control and Assurance</div>
       </div>
     </section>
     <!-- Projects Section -->
@@ -332,7 +344,7 @@
         <div class="project">
             <h4>Site Management (Installation, Commissioning and Maintenance)</h4>
             <p>Overseeing Installation, Modifications and maintenance for Automatic cargo handling System across Riyadh and Dammam in KSA.</p>
-            <div class="project-images">
+            <div class="project-photos">
                 <img src="site_management1.jpg" alt="Site Management Image 1">
                 <img src="site_management2.jpg" alt="Site Management Image 2">
                 <img src="site_management3.jpg" alt="Site Management Image 3">
@@ -343,7 +355,7 @@
         <div class="project">
             <h4>Car Turntable Installation and Maintenance</h4>
             <p>Led the Project Installation and Bi-Annual preventive maintenance for a private villa client in Riyadh, KSA.</p>
-            <div class="project-images">
+            <div class="project-photos">
                 <img src="car_turntable1.jpg" alt="Car Turntable Image 1">
                 <img src="car_turntable2.jpg" alt="Car Turntable Image 2">
                 <img src="car_turntable3.jpg" alt="Car Turntable Image 3">
@@ -359,7 +371,7 @@
         <div class="project">
             <h4> Installation of Kardex Electrical Sorting System</h4>
             <p>Successfully installed, commissioned and Handed over a high-capacity material sorting machine in Abu Dhabi.</p>
-            <div class="project-images">
+            <div class="project-photos">
                 <img src="kardex1.jpg" alt="Kardex System Image 1">
                 <img src="kardex2.jpg" alt="Kardex System Image 2">
                 <img src="kardex3.jpg" alt="Kardex System Image 3">
@@ -370,7 +382,7 @@
         <div class="project">
             <h4>Installation of Automated and Manual Car Parking Solutions</h4>
             <p>Led the installation, commissioning, and troubleshooting of automated and manual car parking systems across UAE.</p>
-            <div class="project-images">
+            <div class="project-photos">
                 <img src="car_parking1.jpg" alt="Car Parking Solution Image 1">
                 <img src="car_parking2.jpg" alt="Car Parking Solution Image 2">
                 <img src="car_parking3.jpg" alt="Car Parking Solution Image 3">
@@ -381,7 +393,7 @@
         <div class="project">
             <h4>Installation of Storage Racks and Conveyor Systems</h4>
             <p>Managed installation of Heavy Storage Racks and conveyor solutions for a major storage facility in Dubai.</p>
-            <div class="project-images">
+            <div class="project-photos">
                 <img src="conveyor1.jpg" alt="Conveyor Installation Image 1">
                 <img src="conveyor2.jpg" alt="Conveyor Installation Image 2">
                 <img src="conveyor3.jpg" alt="Conveyor Installation Image 3">
