@@ -150,17 +150,57 @@
     	}
     }
 
-        .skills ul, .projects ul {
-            list-style: none;
-            padding: 0;
-        }
-        .skills li, .projects li {
-            background: #f4f4f4;
-            margin: 0.5rem 0;
-            padding: 0.75rem;
-            border-left: 5px solid #2980b9;
-            border-radius: 5px;
-	}
+        /* Skills Section Styling */
+#skills {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f9f9f9; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50; /* Modern dark blue color for the heading */
+}
+
+/* Grid Layout for Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-item {
+    padding: 1rem;
+    background-color: #ffffff; /* White background for each skill */
+    border: 1px solid #ddd; /* Border for definition */
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: #555; /* Neutral text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+}
+
+.skill-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* For Mobile Responsiveness */
+@media (max-width: 768px) {
+    #skills h2 {
+        font-size: 1.5rem;
+    }
+    .skill-item {
+        font-size: 0.9rem;
+    }
+}
         /* Group Styling */
 	.project-group {
             margin-bottom: 2rem; /* Add spacing between project groups */
@@ -299,15 +339,15 @@
     </section>
     <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Project Management and Site Operations</li>
-            <li>Electro-Mechanical System Installation</li>
-            <li>Lean Six Sigma (Black Belt Certified)</li>
-            <li>Troubleshooting and Preventive Maintenance</li>
-            <li>Inventory and Spare Parts Management</li>
-            <li>Client and Supplier Coordination</li>
-        </ul>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-item">Project Management and Site Operations</div>
+        <div class="skill-item">Electro-Mechanical System Installation</div>
+        <div class="skill-item">Lean Six Sigma (Black Belt Certified)</div>
+        <div class="skill-item">Troubleshooting and Preventive Maintenance</div>
+        <div class="skill-item">Inventory and Spare Parts Management</div>
+        <div class="skill-item">Client and Supplier Coordination</div>
+      </div>
     </section>
     <!-- Projects Section -->
     <!-- Projects Section -->
