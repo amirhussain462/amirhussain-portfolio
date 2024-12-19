@@ -194,59 +194,41 @@
 	#projects {
     		padding: 3rem 1.5rem;
     		background-color: #fff3e0;
-    		color: #ff8f00;
+    		color: #333333; /* Neutral dark color for overall section text */
 	}
 
 	#projects h2 {
     		font-size: 2.2rem;
     		margin-bottom: 2rem;
+    		color: #d35400; /* Vibrant orange for main section heading */
 	}
 
-	.project-grid {
-    		display: grid;
-    		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    		gap: 2rem;
+	.project-group h3 {
+    		font-size: 1.8rem;
+    		color: #e67e22; /* Slightly lighter shade for project group headings */
+    		margin-bottom: 1rem;
 	}
 
-	.project-item {
-    		background: #ffffff;
-    		border: 1px solid #ffe0b2;
-    		border-radius: 10px;
-    		overflow: hidden;
-    		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    		transition: transform 0.3s;
-	}
-
-	.project-item:hover {
-    		transform: scale(1.05);
-	}
-
-	.project-item h3 {
+	.project h4 {
     		font-size: 1.5rem;
-    		color: #ff8f00;
-    		margin: 1rem;
+    		color: #2c3e50; /* Dark blue for individual project titles */
+    		margin: 1rem 0;
 	}
 
-	.project-item p {
+	.project p {
     		font-size: 1.1rem;
-    		color: #444;
-    		margin: 1rem;
-	}
-
-	.project-photos {
-    		display: flex;
-    		justify-content: space-between;
-    		gap: 1rem;
-    		padding: 1rem;
+    		color: #555555; /* Neutral gray for descriptions */
+    		margin: 0 0 1rem;
 	}
 
 	.project-photos img {
-    		width: calc(33.33% - 0.66rem); /* Each photo takes one-third of the row */
+    		width: calc(33.33% - 0.66rem);
     		height: 200px;
     		object-fit: cover;
     		border: 1px solid #ffe0b2;
     		border-radius: 5px;
 	}
+
         /* Footer Styling */
         footer {
             text-align: center;
@@ -271,7 +253,7 @@
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience>       
+        <a href="#experience">Experience</a>       
 	<a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
     </nav>
