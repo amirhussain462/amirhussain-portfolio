@@ -406,7 +406,7 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
 	<a href="#projects">Projects</a>
-	<a href="#gallery">Photo Gallery</a>
+	<a href="#technical-gallery">Photo Gallery</a>
 	<a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -576,83 +576,89 @@
            </div>
         </div>
     </section>
-	<!-- Technical Photo Gallery Section -->
-<section id="technical-gallery">
-    <h2>Technical Photo Gallery</h2>
-    <p>Explore images showcasing my technical expertise and projects.</p>
+<!-- Technical Photo Gallery Section -->
+    <section id="technical-gallery">
+        <h2>Technical Photo Gallery</h2>
+        <p>Explore images showcasing my technical expertise and projects.</p>
 
-    <!-- Gallery Preview -->
-    <div class="gallery-preview" id="gallery-preview">
-        <!-- Placeholder for photos -->
-        <div class="gallery-item">
-            <img src="photo1-thumbnail.jpg" alt="Technical Work 1">
-            <p class="description">This is a sample description for the first image.</p>
+        <!-- Gallery Preview -->
+        <div class="gallery-preview" id="gallery-preview"></div>
+
+        <!-- Add Photos Section -->
+        <a href="#add-photo" class="view-gallery-button" id="add-photo-toggle">Add Photos</a>
+        <div class="add-photo-section" id="add-photo-section" style="display: none;">
+            <textarea id="photo-urls" placeholder="Enter photo URLs separated by commas"></textarea><br>
+            <textarea id="photo-description" placeholder="Write about the image or group of images"></textarea><br>
+            <button id="add-photos">Add Photos</button>
         </div>
-    </div>
+    </section>
 
-    <!-- Add Photos Section -->
-    <a href="#add-photo" class="view-gallery-button" id="add-photo-toggle">Add Photos</a>
-    <div class="add-photo-section" id="add-photo-section" style="display: none;">
-        <textarea id="photo-urls" placeholder="Enter photo URLs separated by commas"></textarea><br>
-        <textarea id="photo-description" placeholder="Write about the image or group of images"></textarea><br>
-        <button id="add-photos">Add Photos</button>
-    </div>
-</section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Contact information goes here.</p>
+    </section>
 
-<script>
-    // Toggling the "Add Photo" Section
-    const addPhotoToggle = document.getElementById('add-photo-toggle');
-    const addPhotoSection = document.getElementById('add-photo-section');
-    const galleryPreview = document.getElementById('gallery-preview');
-    const photoUrlsInput = document.getElementById('photo-urls');
-    const photoDescriptionInput = document.getElementById('photo-description');
-    const addPhotosButton = document.getElementById('add-photos');
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const addPhotoToggle = document.getElementById('add-photo-toggle');
+            const addPhotoSection = document.getElementById('add-photo-section');
+            const galleryPreview = document.getElementById('gallery-preview');
+            const photoUrlsInput = document.getElementById('photo-urls');
+            const photoDescriptionInput = document.getElementById('photo-description');
+            const addPhotosButton = document.getElementById('add-photos');
 
-    addPhotoToggle.addEventListener('click', (e) => {
-        e.preventDefault();
-        addPhotoSection.style.display = addPhotoSection.style.display === 'block' ? 'none' : 'block';
-    });
+            const loadPhotos = (photos) => {
+                galleryPreview.innerHTML = ''; // Clear previous content
+                photos.forEach(({ url, description }) => addPhotoToGallery(url, description));
+            };
 
-    // Adding New Photos Dynamically
-    addPhotosButton.addEventListener('click', () => {
-        const photoUrls = photoUrlsInput.value.trim();
-        const description = photoDescriptionInput.value.trim();
+            const addPhotoToGallery = (url, description) => {
+                const galleryItem = document.createElement('div');
+                galleryItem.className = 'gallery-item';
 
-        if (!photoUrls) return alert('Please enter photo URLs.');
-        if (!description) return alert('Please provide a description.');
+                const newImg = document.createElement('img');
+                newImg.src = url;
+                newImg.alt = description || 'Uploaded Technical Work';
 
-        const photoArray = photoUrls.split(',').map(url => url.trim());
+                const desc = document.createElement('p');
+                desc.className = 'description';
+                desc.textContent = description || 'No description provided';
 
-        photoArray.forEach(url => {
-            // Create gallery item
-            const galleryItem = document.createElement('div');
-            galleryItem.className = 'gallery-item';
+                galleryItem.appendChild(newImg);
+                galleryItem.appendChild(desc);
+                galleryPreview.appendChild(galleryItem);
+            };
 
-            // Create image element
-            const newImg = document.createElement('img');
-            newImg.src = url;
-            newImg.alt = 'Uploaded Technical Work';
+            addPhotoToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                addPhotoSection.style.display = addPhotoSection.style.display === 'block' ? 'none' : 'block';
+            });
 
-            // Add description
-            const desc = document.createElement('p');
-            desc.className = 'description';
-            desc.textContent = description;
+            addPhotosButton.addEventListener('click', () => {
+                const photoUrls = photoUrlsInput.value.trim();
+                const description = photoDescriptionInput.value.trim();
 
-            // Append image and description to gallery item
-            galleryItem.appendChild(newImg);
-            galleryItem.appendChild(desc);
+                if (!photoUrls) return alert('Please enter photo URLs.');
 
-            // Append gallery item to gallery preview
-            galleryPreview.appendChild(galleryItem);
+                const photoArray = photoUrls.split(',').map(url => ({
+                    url: url.trim(),
+                    description: description
+                }));
+
+                loadPhotos(photoArray); // Load new photos directly
+
+                photoUrlsInput.value = '';
+                photoDescriptionInput.value = '';
+                alert('Photos and description added successfully!');
+            });
+
+            const examplePhotos = [
+                { url: 'https://example.com/photo1.jpg', description: 'Example Photo 1' },
+                { url: 'https://example.com/photo2.jpg', description: 'Example Photo 2' }
+            ];
+            loadPhotos(examplePhotos);
         });
-
-        // Clear inputs after adding
-        photoUrlsInput.value = '';
-        photoDescriptionInput.value = '';
-        alert('Photos and description added successfully!');
-    });
-</script>
-
+    </script>
     <!-- Certifications Section -->
     <section id="certifications" style="text-align: center;">
     <h2 style="color: #2c3e50;">Certifications</h2>
