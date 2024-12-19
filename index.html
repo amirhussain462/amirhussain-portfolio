@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amir Hussain Shaik - Portfolio</title>
@@ -220,7 +221,7 @@
     		color: #555555; /* Neutral gray for descriptions */
     		margin: 0 0 1rem;
 	}
-
+              
 	.project-photos img {
     		width: calc(33.33% - 0.66rem);
     		height: 200px;
@@ -228,7 +229,59 @@
     		border: 1px solid #ffe0b2;
     		border-radius: 5px;
 	}
+           /* Contact Section Styling */
+#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+#contact h2 {
+    color: #003366;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+#contact p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 1em;
+}
+
+#contact p strong {
+    display: block;
+    color: #555;
+    font-weight: bold;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    color: #555;
+}
+
+#contact ul li {
+    margin: 5px 0;
+}
+
+#contact a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.fa {
+    color: #003366;
+    margin-right: 8px;
+}
         /* Footer Styling */
         footer {
             text-align: center;
@@ -461,14 +514,42 @@
        	   </div>
    		</div>
 	</section>
-    
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p><strong>Email:</strong> <a href="mailto:amirhussain462@gmail.com">amirhussain462@gmail.com</a></p>
-        <p><strong>Phone:</strong> UAE: +971-547637988 | KSA: +966-508795954</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/amirhussainshaik" target="_blank">linkedin.com/in/amirhussainshaik</a></p>
-    </section>
+       <!-- Contact Section -->
+	<section id="contact">
+ 	  <h2>Contact Me</h2>
+   <p>
+        <strong>
+            <i class="fa fa-envelope"></i>
+            Email:
+        </strong>
+        <a href="mailto:amirhussain462@gmail.com">amirhussain462@gmail.com</a>
+    </p>
+    <p>
+        <strong>
+            <i class="fa fa-video"></i>
+            Live ID (for Teams):
+        </strong>
+        <a href="mailto:amirhussain462@yahoo.com">amirhussain462@yahoo.com</a>
+    </p>
+    <p>
+        <strong>
+            <i class="fa fa-phone"></i>
+            Phone:
+        </strong>
+        <ul>
+            <li><strong>UAE:</strong> +971-547637988</li>
+            <li><strong>KSA:</strong> +966-508795954</li>
+            <li><strong>India:</strong> +91-8885321600</li>
+        </ul>
+    </p>
+    <p>
+        <strong>
+            <i class="fa fa-linkedin"></i>
+            LinkedIn:
+        </strong>
+        <a href="https://www.linkedin.com/in/amirhussainshaik" target="_blank">linkedin.com/in/amirhussainshaik</a>
+ 	  </p>
+       </section>
     <!-- Footer -->
     <footer>
         <p>Portfolio of Amir Hussain Shaik | Powered by GitHub Pages</p>
