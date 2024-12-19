@@ -83,97 +83,6 @@
             margin-bottom: 2rem;
             font-size: 2.2rem;
         }
-	 /* Gallery Section Styling */
-        #technical-gallery {
-            padding: 3rem 1.5rem;
-            background-color: #f7f9fc;
-            color: #2c3e50;
-            text-align: center;
-        }
-
-        #technical-gallery h2 {
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
-            color: #d35400;
-        }
-
-        #technical-gallery p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            color: #555555;
-        }
-
-        .gallery-preview {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            justify-content: center;
-        }
-
-        .gallery-item {
-            position: relative;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 1rem;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 200px; /* Fixed height for uniformity */
-            object-fit: cover; /* Ensures proper cropping and centering */
-            border-radius: 8px;
-        }
-
-        .gallery-item .description {
-            margin-top: 0.5rem;
-            font-size: 1rem;
-            color: #34495e;
-        }
-
-        .view-gallery-button {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 0.8rem 2rem;
-            font-size: 1rem;
-            color: #ffffff;
-            background-color: #d35400;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .view-gallery-button:hover {
-            background-color: #e67e22;
-        }
-
-        .add-photo-section {
-            margin-top: 3rem;
-            text-align: center;
-            border-top: 2px solid #dcdcdc;
-            padding-top: 2rem;
-        }
-
-        .add-photo-section textarea,
-        .add-photo-section input {
-            width: 90%;
-            margin-bottom: 1rem;
-        }
-
-        .add-photo-section button {
-            padding: 0.8rem 2rem;
-            font-size: 1rem;
-            color: #ffffff;
-            background-color: #2c3e50;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .add-photo-section button:hover {
-            background-color: #34495e;
-        } 
 	/* About Section Styling */
         .about-section {
             background-color: #e3f2fd;
@@ -406,7 +315,6 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
 	<a href="#projects">Projects</a>
-	<a href="#technical-gallery">Photo Gallery</a>
 	<a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -576,83 +484,6 @@
            </div>
         </div>
     </section>
-<!-- Technical Photo Gallery Section -->
-    <section id="technical-gallery">
-        <h2>Technical Photo Gallery</h2>
-        <p>Explore images showcasing my technical expertise and projects.</p>
-
-        <!-- Gallery Preview -->
-        <div class="gallery-preview" id="gallery-preview"></div>
-
-        <!-- Add Photos Section -->
-        <a href="#add-photo" class="view-gallery-button" id="add-photo-toggle">Add Photos</a>
-        <div class="add-photo-section" id="add-photo-section" style="display: none;">
-            <textarea id="photo-urls" placeholder="Enter photo URLs separated by commas"></textarea><br>
-            <textarea id="photo-description" placeholder="Write about the image or group of images"></textarea><br>
-            <button id="add-photos">Add Photos</button>
-        </div>
-    </section>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const addPhotoToggle = document.getElementById('add-photo-toggle');
-            const addPhotoSection = document.getElementById('add-photo-section');
-            const galleryPreview = document.getElementById('gallery-preview');
-            const photoUrlsInput = document.getElementById('photo-urls');
-            const photoDescriptionInput = document.getElementById('photo-description');
-            const addPhotosButton = document.getElementById('add-photos');
-
-            const loadPhotos = (photos) => {
-                galleryPreview.innerHTML = ''; // Clear previous content
-                photos.forEach(({ url, description }) => addPhotoToGallery(url, description));
-            };
-
-            const addPhotoToGallery = (url, description) => {
-                const galleryItem = document.createElement('div');
-                galleryItem.className = 'gallery-item';
-
-                const newImg = document.createElement('img');
-                newImg.src = url;
-                newImg.alt = description || 'Uploaded Technical Work';
-
-                const desc = document.createElement('p');
-                desc.className = 'description';
-                desc.textContent = description || 'No description provided';
-
-                galleryItem.appendChild(newImg);
-                galleryItem.appendChild(desc);
-                galleryPreview.appendChild(galleryItem);
-            };
-
-            addPhotoToggle.addEventListener('click', (e) => {
-                e.preventDefault();
-                addPhotoSection.style.display = addPhotoSection.style.display === 'block' ? 'none' : 'block';
-            });
-
-            addPhotosButton.addEventListener('click', () => {
-                const photoUrls = photoUrlsInput.value.trim();
-                const description = photoDescriptionInput.value.trim();
-
-                if (!photoUrls) return alert('Please enter photo URLs.');
-
-                const photoArray = photoUrls.split(',').map(url => ({
-                    url: url.trim(),
-                    description: description
-                }));
-
-                loadPhotos(photoArray); // Load new photos directly
-
-                photoUrlsInput.value = '';
-                photoDescriptionInput.value = '';
-                alert('Photos and description added successfully!');
-            });
-
-            const examplePhotos = [
-                { url: 'https://example.com/photo1.jpg', description: 'Example Photo 1' },
-                { url: 'https://example.com/photo2.jpg', description: 'Example Photo 2' }
-            ];
-            loadPhotos(examplePhotos);
-        });
-    </script>
     <!-- Certifications Section -->
     <section id="certifications" style="text-align: center;">
     <h2 style="color: #2c3e50;">Certifications</h2>
