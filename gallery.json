@@ -1,0 +1,12 @@
+[
+    {
+        "type": "image",
+        "src": "experience1.jpg",
+        "description": "Working on conveyor systems"
+    },
+    {
+        "type": "video",
+        "src": "experience1.mp4",
+        "description": "Testing new system installations"
+    }
+]
