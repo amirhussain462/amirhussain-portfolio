@@ -28,6 +28,7 @@
             display: flex;
             justify-content: center;
             margin: 0;
+            align-items: center;
         }
 
         nav ul li {
@@ -63,6 +64,8 @@
 
         .gallery img, .gallery video {
             width: 100%;
+            height: 250px;
+            object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -79,7 +82,6 @@
 <body>
     <header>
         <h1>Gallery</h1>
-        <p>Explore Photos and Videos from My Experiences</p>
         <nav>
             <ul>
                 <li><a href="index.html#about">About</a></li>
@@ -95,6 +97,9 @@
     <div class="container">
         <section>
             <h2>Gallery</h2>
+            <p style="font-style: italic; color: #666; text-align: center;">
+                A Glimpse into My Journey: Capturing Moments of Innovation and Expertise.
+            </p>
             <div class="gallery"></div>
         </section>
     </div>
