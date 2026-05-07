@@ -1,651 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9PZEPG3EV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amir Hussain Shaik | Senior Electrical & Automation Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Poppins',sans-serif;background:#0b1120;color:#fff;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
 
-  gtag('config', 'G-T9PZEPG3EV');
-</script>
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amir Hussain Shaik - Portfolio</title>
-    <style>
-        /* General Styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
-            background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
-        }
+    .container{width:min(1200px,92%);margin:auto}
 
-        header {
-            background: url('header-bg.jpg') no-repeat center center/cover;
-            color: #fff;
-            text-align: center;
-            padding: 4rem 1rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 3.5rem;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-        }
-
-        header p {
-            margin-top: 1rem;
-            font-size: 1.6rem;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #1a237e;
-            padding: 1rem 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0.8rem 1.5rem;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background 0.3s, transform 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #3949ab;
-            transform: scale(1.1);
-        }
-
-        section {
-            padding: 2.5rem;
-            margin: 2rem auto;
-            max-width: 1000px;
-            background: #ffffff;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-        }
-
-        section h2 {
-            color: #1a237e;
-            border-bottom: 3px solid #3949ab;
-            padding-bottom: 0.5rem;
-            margin-bottom: 2rem;
-            font-size: 2.2rem;
-        }
-	
-
-        /* About Section Styling */
-section {
-    padding: 4rem 2rem;
-    background-color: #f5f5f5;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-section h2 {
-    color: #6200ea;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-/* About Container */
-.about-container {
-    display: flex;
-    gap: 2rem;
-    align-items: center; /* Aligns text and image in desktop view */
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-/* About Content */
-.about-content {
-    flex: 2;
-    min-width: 300px;
-    background: #fff;
-    border: 2px solid #6200ea;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Ensures text is vertically aligned */
-    height: auto;
-}
-
-.about-content h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-}
-
-.about-content p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    text-align: justify;
-    line-height: 1.8;
-}
-
-.about-content p span {
-    font-weight: bold;
-    color: #6200ea;
-}
-
-/* About Image */
-.about-image {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-image img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-    object-fit: cover; /* Ensures the image fills the space properly */
-    height: 100%; /* Adjusts the height dynamically */
-}
-
-.about-image img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
+    header{
+      position:fixed;top:0;left:0;width:100%;z-index:1000;
+      background:rgba(8,15,35,.92);backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(255,255,255,.08)
     }
 
-    .about-content, .about-image {
-        width: 100%;
+    nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+    .logo{font-size:22px;font-weight:700;color:#f5c76d}
+    .nav-links{display:flex;gap:28px;font-size:15px;font-weight:500}
+    .nav-links a:hover{color:#f5c76d}
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      background:linear-gradient(rgba(8,15,35,.82),rgba(8,15,35,.88)),url('assets/images/header-bg.jpg') center/cover;
+      padding-top:100px;
     }
 
-    .about-image img {
-        max-width: 100%;
-        height: auto;
+    .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}
+    .tag{color:#f5c76d;font-weight:600;margin-bottom:12px}
+    h1{font-size:54px;line-height:1.1;margin-bottom:15px}
+    .subtitle{font-size:24px;color:#d9d9d9;margin-bottom:18px}
+    .hero p{font-size:17px;color:#c7c7c7;margin-bottom:28px}
+
+    .btns{display:flex;gap:16px;flex-wrap:wrap}
+    .btn{
+      padding:14px 28px;border-radius:12px;font-weight:600;
+      transition:.3s;border:1px solid transparent
     }
-}
-	/* Skills Section Styling */
-        #skills {
-            padding: 3rem 1.5rem;
-            background-color: #f1f8e9;
-            color: #2e7d32;
-        }
+    .btn-primary{background:#f5c76d;color:#111}
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-outline{border:1px solid #f5c76d;color:#f5c76d}
 
-        #skills h2 {
-            font-size: 2.2rem;
-            margin-bottom: 2rem;
-        }
+    .profile-card{
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:24px;padding:20px;
+      box-shadow:0 20px 60px rgba(0,0,0,.25)
+    }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-        }
+    section{padding:90px 0}
+    .section-title{text-align:center;font-size:38px;margin-bottom:14px}
+    .section-sub{text-align:center;color:#c8c8c8;max-width:760px;margin:0 auto 50px}
 
-        .skill-item {
-            padding: 1.5rem;
-            background-color: #ffffff;
-            border: 2px solid #aed581;
-            border-radius: 10px;
-            text-align: center;
-            font-size: 1.1rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .card{
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:20px;padding:28px
+    }
+    .stat-number{font-size:36px;font-weight:800;color:#f5c76d}
 
-        .skill-item:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .skill-card h3{margin-bottom:10px;color:#f5c76d}
 
-        /* Experience Section Styling */
-        #experience {
-            background-color: #ede7f6;
-            color: #5e35b1;
-            padding: 3rem 1.5rem;
-        }
+    .project-card{margin-bottom:24px}
+    .project-card h3{margin-bottom:12px;color:#f5c76d}
 
-        #experience h2 {
-            font-size: 2.2rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
+    .timeline-item{border-left:2px solid #f5c76d;padding-left:24px;margin-bottom:28px}
+    .timeline-item h3{color:#f5c76d}
 
-        .job {
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        }
+    .contact-box{text-align:center}
+    footer{padding:30px 0;text-align:center;color:#aaa;border-top:1px solid rgba(255,255,255,.08)}
 
-        .job h3 {
-            font-size: 1.6rem;
-            color: #3949ab;
-            margin-bottom: 1rem;
-        }
-
-        .job p {
-            font-size: 1.1rem;
-            color: #444;
-            text-align: justify;
-        }
-
-      	/* Project Section Styling */
-	#projects {
-    		padding: 3rem 1.5rem;
-    		background-color: #fff3e0;
-    		color: #333333; /* Neutral dark color for overall section text */
-	}
-
-	#projects h2 {
-    		font-size: 2.2rem;
-    		margin-bottom: 2rem;
-    		color: #d35400; /* Vibrant orange for main section heading */
-	}
-
-	.project-group h3 {
-    		font-size: 1.8rem;
-    		color: #e67e22; /* Slightly lighter shade for project group headings */
-    		margin-bottom: 1rem;
-	}
-
-	.project h4 {
-    		font-size: 1.5rem;
-    		color: #2c3e50; /* Dark blue for individual project titles */
-    		margin: 1rem 0;
-	}
-
-	.project p {
-    		font-size: 1.1rem;
-    		color: #555555; /* Neutral gray for descriptions */
-    		margin: 0 0 1rem;
-	}
-              
-	.project-photos img {
-    		width: calc(33.33% - 0.66rem);
-    		height: 200px;
-    		object-fit: cover;
-    		border: 1px solid #ffe0b2;
-    		border-radius: 5px;
-	}
-           /* Contact Section Styling */
-#contact {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#contact h2 {
-    color: #003366;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-}
-
-#contact p {
-    margin: 10px 0;
-    color: #555;
-    font-size: 1em;
-}
-
-#contact p strong {
-    display: block;
-    color: #555;
-    font-weight: bold;
-}
-
-#contact ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    color: #555;
-}
-
-#contact ul li {
-    margin: 5px 0;
-}
-
-#contact a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-.fa {
-    color: #003366;
-    margin-right: 8px;
-}
-        /* Footer Styling */
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            background-color: #1a237e;
-            color: #fff;
-        }
-
-        footer a {
-            color: #ffcc80;
-            text-decoration: none;
-        }
-    </style>
+    @media(max-width:900px){
+      .hero-grid,.grid-3,.stats{grid-template-columns:1fr}
+      h1{font-size:38px}
+      .subtitle{font-size:20px}
+      .nav-links{gap:14px;font-size:13px;flex-wrap:wrap;justify-content:flex-end}
+    }
+  </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Amir Hussain Shaik</h1>
-        <p>Electrical & Maintenance Engineer Specializing in - Electro-Mechanical & Automation Systems Installation & Commissioning | Troubleshooting | Maintenance | Administration | Lean Six Sigma Methodologies | Workplace Safety...</p>
-    </header>
+
+<header>
+  <div class="container">
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
+      <div class="logo">Amir Portfolio</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Expertise</a>
+        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-	<a href="#projects">Projects</a>
-	<a href="#certifications">Certifications</a>
+        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
+      </div>
     </nav>
-    <!-- About Section -->
-    <section id="about" class="about-section">
-    <div class="about-container">
-        <!-- About Content -->
-        <div class="about-content">
-            <h2><span>Innovating, Optimizing & Driving Engineering Excellence</span></h2>
-<p>Hello and welcome! I’m an <strong>Electrical & Maintenance Engineer</strong> with <strong>around 10 years of hands-on experience</strong> in designing, implementing, and optimizing engineering systems.</p>
+  </div>
+</header>
 
-<p>My journey in the <strong>Electro-Mechanical & Automation Industry</strong> across India & the Middle East has allowed me to work on diverse, cutting-edge projects—ranging from <strong>Car Parking Systems and Turntables</strong> to <strong>Electric Monorails and Automated Conveyors</strong>. I specialize in transforming challenges into streamlined, efficient solutions that enhance operational performance.</p>
-
-<p>With a <strong>Lean Six Sigma Black Belt</strong>, I bring a structured and data-driven approach to engineering, focusing on improving <strong>safety, efficiency, and system reliability</strong>. Beyond technical expertise, I enjoy collaborating with teams, sharing knowledge, and mentoring professionals to create future-ready talent in the industry.</p>
-
-<p>I’m always open to exploring <strong>new opportunities</strong> where I can contribute my skills and experience to meaningful projects. Whether it’s leading complex engineering initiatives, optimizing existing systems, or driving innovation, I’m excited about making a lasting impact.</p>
-
-<p><span>If you’re looking for someone who can adapt, innovate, and deliver results, let’s connect and explore how we can work together.</span></p>
-        </div>
-        <!-- About Image -->
-        <div class="about-image">
-            <img src="about_me.jpg" alt="About Me" />
-         </div>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="tag">Engineering Excellence • Industrial Automation • Project Leadership</div>
+      <h1>Amir Hussain Shaik</h1>
+      <div class="subtitle">Senior Electrical & Automation Engineer</div>
+      <p>
+        Delivering high-performance engineering solutions across Saudi Arabia, UAE, and India with 10+ years of expertise in electro-mechanical systems, material handling systems, industrial automation, and mission-critical maintenance operations.
+      </p>
+      <div class="btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
       </div>
-    </section>
-    <!-- Skills Section -->
-    <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-item">Project Lifestyle Management</div>
-        <div class="skill-item">Lean Six Sigma Expertise</div>
-        <div class="skill-item">Equipment Installation and Commissioning</div>
-        <div class="skill-item">Advanced Troubleshooting and Maintenance</div>
-        <div class="skill-item">Client Relationship Management</div>
-        <div class="skill-item">Leadership and Team Management</div>
-	<div class="skill-item">Occupational Health and Safety</div>
-	<div class="skill-item">Technical Documentation and Interpretation</div>
-	<div class="skill-item">Inventory Optimization</div>
-	<div class="skill-item">Quality Control and Assurance</div>
-      </div>
-    </section>
-        <!-- Experience Section -->
-    <section id="experience">
-    <h2>Professional Experience</h2>
-
-    <!-- Job 1 -->
-    <div class="job">
-        <h3>Electrical Engineer</h3>
-        <p><strong>ALS Logistic Solutions LLC, Dubai, UAE</strong> | Feb 2023 – Present</p>
-        <p>Leading the installation, commissioning, and troubleshooting of electro-mechanical and automation systems for high-profile clients, ensuring optimal performance and reliability.</p>
-    </div>
-    <hr>
-
-    <!-- Job 2 -->
-    <div class="job">
-        <h3>Automation Technician</h3>
-        <p><strong>Emirates Flight Catering (EKFC) LLC, Dubai, UAE</strong> | Oct 2018 – Jan 2023</p>
-        <p>Performed preventive maintenance, diagnostics, and system repairs for critical automation systems, minimizing downtime and ensuring operational excellence in a high-demand environment.</p>
-    </div>
-    <hr>
-
-    <!-- Job 3 -->
-    <div class="job">
-        <h3>Technical Assistant and Test Centre Administrator</h3>
-        <p><strong>Unidad Technologies & Solutions Pvt. Ltd., India</strong> | June 2017 – Sept 2018</p>
-        <p>Assisted in configuring and maintaining test setups for automation projects, while providing technical support and managing administrative tasks efficiently.</p>
-    </div>
-    <hr>
-
-    <!-- Job 4 -->
-    <div class="job">
-        <h3>Technician</h3>
-        <p><strong>International Food & Consumable Goods Co. (IFCG), Jeddah, Saudi Arabia</strong> | Dec 2014 – Aug 2016</p>
-        <p>Conducted maintenance and repairs on industrial systems, ensuring their seamless operation and contributing to the company’s production targets.</p>
     </div>
 
-    <!-- Call to Action -->
-    <div class="cta">
-        <p>With a proven track record across diverse roles and industries, I bring a wealth of expertise in automation, maintenance, and system optimization. Let’s connect to drive innovative solutions for your projects!</p>
+    <div class="profile-card">
+      <img src="assets/images/about_me.jpg" alt="Amir Hussain Shaik">
     </div>
-  </section>
-    <!-- Projects Section -->
-    <section id="projects">
-    <!-- Projects in KSA -->
-<div class="project-group">
-    <h3>Projects in KSA</h3>
+  </div>
+</section>
 
-    <!-- Engineering Operations & Site Management – KSA -->
-    <div class="project">
-        <h4>🛠 Engineering Operations & Site Management – KSA</h4>
-        <p><strong>Leading ALS team operations across multiple DHL sites, ensuring optimal material handling system performance.</strong></p>
-
-        <h5>🔹 Overview</h5>
-        <p>Managed engineering operations across <strong>DHL sites in Riyadh and Dammam</strong>, overseeing material handling and automation systems. 
-           Worked on <strong>preventive maintenance, troubleshooting, team training, and site operations</strong> to enhance system efficiency and reliability.</p>
-
-        <h5>🔹 Key Responsibilities</h5>
-        <ul>
-            <li>✅ Conducted <strong>120+ preventive maintenance activities annually</strong>, reducing system downtime by 30%</li>
-            <li>✅ Resolved <strong>200+ breakdowns</strong> with an average resolution time of <strong>2 hours</strong></li>
-            <li>✅ Improved overall <strong>system performance by 20%</strong> through proactive troubleshooting</li>
-            <li>✅ Delivered <strong>100+ hours of training</strong> to DHL staff and ALS engineers, reducing recurring faults</li>
-            <li>✅ Led <strong>site operations</strong>, managing reports, spare parts, petty cash, and technician hiring</li>
-            <li>✅ Optimized inventory and sourcing, reducing procurement costs by 15%</li>
-            <li>✅ Ensured seamless ALS management visits by handling accommodations & transportation</li>
-            <li>✅ Maintained regular communication with <strong>DHL site management</strong> to address operational needs</li>
-        </ul>
-
-        <h5>🔹 Systems & Projects in KSA</h5>
-        <ul>
-            <li>✔ <strong>Automated Cargo Handling Systems</strong> – Installation, modification, and maintenance across Riyadh & Dammam</li>
-            <li>✔ <strong>CTX-PR Car Turntables</strong> – Installation & bi-annual preventive maintenance for private villa clients in Riyadh</li>
-            <li>✔ <strong>Logistics & Conveyor Systems</strong> – Ensuring uninterrupted material flow for high-efficiency warehouse operations</li>
-        </ul>
-
-        <h5>📌 Key Achievements</h5>
-        <ul>
-            <li>🔹 Increased <strong>team efficiency by 20%</strong> through hiring and managing local technicians</li>
-            <li>🔹 Achieved a <strong>98% client satisfaction score</strong> hrough proactive issue resolution</li>
-            <li>🔹 Standardized <strong>technical support across multiple DHL sites</strong>, ensuring consistent operational performance</li>
-        </ul>
-
-        <!-- Project Photos Section (Grouped at the End) -->
-        <h5>📸 Project Photos</h5>
-
-        <!-- Site Management Photos -->
-        <h6>🔹 Site Management (Installation, Commissioning & Maintenance)</h6>
-        <div class="project-photos">
-            <img src="site_management1.jpg" alt="Site Management Image 1">
-            <img src="site_management2.jpg" alt="Site Management Image 2">
-            <img src="site_management3.jpg" alt="Site Management Image 3">
-        </div>
-
-        <!-- Car Turntable Photos -->
-        <h6>🔹 CTX-PR Car Turntable Installation & Maintenance</h6>
-        <div class="project-photos">
-            <img src="car_turntable1.jpg" alt="Car Turntable Image 1">
-            <img src="car_turntable2.jpg" alt="Car Turntable Image 2">
-            <img src="car_turntable3.jpg" alt="Car Turntable Image 3">
-        </div>
-    </div>
-</div>
-
-    <!-- Projects in UAE -->
-<div class="project-group">
-    <h3>Projects in UAE</h3>
-
-    <!-- Engineering & Installation Operations – UAE -->
-    <div class="project">
-        <h4>🛠 Engineering & Installation Operations – UAE</h4>
-        <p><strong>Hands-on experience in automation, material handling, and parking solutions across key industries.</strong></p>
-
-        <h5>🔹 Overview</h5>
-        <p>Worked on <strong>high-profile engineering projects in Abu Dhabi & Dubai</strong>, involving automated storage, car parking systems, and conveyor solutions. 
-           Led **installation, commissioning, maintenance, and troubleshooting** to enhance efficiency and operational reliability.</p>
-
-        <h5>🔹 Key Responsibilities</h5>
-        <ul>
-            <li>✅ Installed and commissioned <strong>advanced automated storage & material handling solutions</strong></li>
-            <li>✅ Led the setup of <strong>hydraulic lifts, car stackers, AGP & turntables</strong> across premium locations</li>
-            <li>✅ Supported **preventive maintenance & troubleshooting** for system efficiency</li>
-            <li>✅ Collaborated with **clients & ALS team** to ensure seamless project execution</li>
-        </ul>
-
-        <h5>🔹 Systems & Projects in UAE</h5>
-        <ul>
-            <li>✔ <strong>Kardex Vertical Carousel Module</strong> – Installed and commissioned an automated high-capacity material sorting system in Abu Dhabi</li>
-            <li>✔ <strong>Car Lifting & Parking Solutions</strong> – Hydraulic lifts, AGP, and turntables for villas, showrooms, and business complexes in Dubai</li>
-            <li>✔ <strong>MHS System Installation</strong> – G+4 pallet racking with conveyor integration for a medical facility in Dubai</li>
-        </ul>
-
-        <h5>📌 Key Achievements</h5>
-        <ul>
-            <li>🔹 Successfully delivered **multiple high-end automation projects** with **minimal downtime**</li>
-            <li>🔹 Enhanced **system efficiency** and **reduced maintenance issues** through proactive troubleshooting</li>
-            <li>🔹 Implemented **space-saving & automated storage solutions** to optimize workflow</li>
-        </ul>
-
-        <!-- Project Photos Section (Grouped at the End) -->
-        <h5>📸 Project Photos</h5>
-
-        <!-- Kardex System Photos -->
-        <h6>🔹 Kardex Vertical Carousel Module Installation – Abu Dhabi</h6>
-        <div class="project-photos">
-            <img src="kardex1.jpg" alt="Kardex System Image 1">
-            <img src="kardex2.jpg" alt="Kardex System Image 2">
-            <img src="kardex3.jpg" alt="Kardex System Image 3">
-        </div>
-
-        <!-- Car Parking System Photos -->
-        <h6>🔹 Car Lifting & Parking Solutions – Dubai</h6>
-        <div class="project-photos">
-            <img src="car_parking1.jpg" alt="Car Parking Solution Image 1">
-            <img src="car_parking2.jpg" alt="Car Parking Solution Image 2">
-            <img src="car_parking3.jpg" alt="Car Parking Solution Image 3">
-        </div>
-
-        <!-- MHS System Photos -->
-        <h6>🔹 MHS System Installation – Dubai Medical Facility</h6>
-        <div class="project-photos">
-            <img src="conveyor1.jpg" alt="Conveyor Installation Image 1">
-            <img src="conveyor2.jpg" alt="Conveyor Installation Image 2">
-            <img src="conveyor3.jpg" alt="Conveyor Installation Image 3">
-        </div>
-    </div>
-</div>
-    </section>
-    <!-- Certifications Section -->
-    <section id="certifications" style="text-align: center;">
-    <h2 style="color: #2c3e50;">Certifications</h2>
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
-        <!-- Certificate 1 -->
-        <div>
-            <a href="lean-six-sigma-yellow-belt.pdf" target="_blank" download>
-                <img src="cert-yellow-belt.jpg" alt="Lean Six Sigma Yellow Belt" 
-                     style="width: 200px; height: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
-            </a>
-            <p>Lean Six Sigma Yellow Belt</p>
-        </div>
-        <!-- Certificate 2 -->
-        <div>
-            <a href="lean-six-sigma-green-belt.pdf" target="_blank" download>
-                <img src="cert-green-belt.jpg" alt="Lean Six Sigma Green Belt" 
-                     style="width: 200px; height: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
-            </a>
-            <p>Lean Six Sigma Green Belt</p>
-        </div>
-        <!-- Certificate 3 -->
-        <div>
-            <a href="lean-six-sigma-black-belt.pdf" target="_blank" download>
-                <img src="cert-black-belt.jpg" alt="Lean Six Sigma Black Belt" 
-                     style="width: 200px; height: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
-            </a>
-            <p>Lean Six Sigma Black Belt</p>
-        </div>
-        <!-- Certificate 4 -->
-        <div>
-            <a href="IOSH-MS-and-NEBOSH-HSW-certificates.pdf" target="_blank" download>
-                <img src="cert-iosh-nebosh.jpg" alt="IOSH and NEBOSH Certificates" 
-                     style="width: 200px; height: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
-            </a>
-            <p>IOSH & NEBOSH Certificates</p>
-       	   </div>
-   		</div>
-	</section>
-       <!-- Contact Section -->
-	<section id="contact">
- 	  <h2>Contact Me</h2>
-   <p>
-        <strong>
-            <i class="fa fa-envelope"></i>
-            Email:
-        </strong>
-        <a href="mailto:amirhussain462@gmail.com">amirhussain462@gmail.com</a>
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-sub">
+      Electrical & Maintenance Engineer with strong experience in conveyor systems, automated storage systems, car parking systems, cranes, ETVs, PLC troubleshooting, installation, commissioning, preventive maintenance, and project execution.
     </p>
-    <p>
-        <strong>
-            <i class="fa fa-video"></i>
-            Live ID (for Teams):
-        </strong>
-        <a href="mailto:amirhussain462@yahoo.com">amirhussain462@yahoo.com</a>
+
+    <div class="stats">
+      <div class="card"><div class="stat-number">10+</div><p>Years Experience</p></div>
+      <div class="card"><div class="stat-number">50+</div><p>Major Projects</p></div>
+      <div class="card"><div class="stat-number">100+</div><p>Critical Breakdowns Solved</p></div>
+      <div class="card"><div class="stat-number">98%</div><p>Client Satisfaction</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Core Expertise</h2>
+    <div class="grid-3">
+      <div class="card skill-card"><h3>Industrial Automation</h3><p>PLC systems, SCADA, controls, relay logic and troubleshooting.</p></div>
+      <div class="card skill-card"><h3>Material Handling Systems</h3><p>Conveyors, ETV, EMS, storage systems and airport logistics solutions.</p></div>
+      <div class="card skill-card"><h3>Project Execution</h3><p>Installation, commissioning, shutdown planning and site leadership.</p></div>
+      <div class="card skill-card"><h3>Client Coordination</h3><p>Technical discussions, reporting, approvals and vendor management.</p></div>
+      <div class="card skill-card"><h3>Maintenance Engineering</h3><p>Preventive, corrective and breakdown maintenance with root cause analysis.</p></div>
+      <div class="card skill-card"><h3>Lean Six Sigma</h3><p>Process optimization, downtime reduction and operational efficiency.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="card project-card">
+      <h3>DHL Riyadh Conveyor Optimization</h3>
+      <p><strong>Challenge:</strong> Belt flipping and shipment transfer failures causing downtime.</p>
+      <p><strong>Solution:</strong> Conveyor alignment, drive correction, guide optimization and preventive maintenance strategy.</p>
+      <p><strong>Result:</strong> Stable operation restored with improved shipment flow and reduced stoppages.</p>
+    </div>
+
+    <div class="card project-card">
+      <h3>Kardex Installation & Maintenance</h3>
+      <p><strong>Scope:</strong> Installation, troubleshooting and support for automated material sorting systems.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title">Career Journey</h2>
+
+    <div class="timeline-item">
+      <h3>ALS Logistic Solutions – Lead Engineer</h3>
+      <p>Managing client sites, troubleshooting, installation, maintenance, team coordination and project execution across KSA & UAE.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>EKFC – Senior Technician</h3>
+      <p>Shift handling, preventive maintenance, reporting, team leadership and system reliability support.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>IFCG – Technician</h3>
+      <p>PLC basics, SCADA support, electrical maintenance and industrial equipment troubleshooting.</p>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+    <div class="grid-3">
+      <div class="card">Lean Six Sigma Yellow Belt</div>
+      <div class="card">Lean Six Sigma Green Belt</div>
+      <div class="card">Lean Six Sigma Black Belt</div>
+      <div class="card">IOSH Managing Safely</div>
+      <div class="card">NEBOSH HSW</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact-box">
+    <h2 class="section-title">Let’s Connect</h2>
+    <p class="section-sub">
+      Engineering excellence is not only about solving problems — it is about building trust, reliability, and long-term operational success.
     </p>
-    <p>
-        <strong>
-            <i class="fa fa-phone"></i>
-            Phone:
-        </strong>
-        <ul>
-            <li><strong>UAE:</strong> +971-547637988</li>
-            <li><strong>KSA:</strong> +966-508795954</li>
-            <li><strong>India:</strong> +91-8885321600</li>
-        </ul>
-    </p>
-    <p>
-        <strong>
-            <i class="fa fa-linkedin"></i>
-            LinkedIn:
-        </strong>
-        <a href="https://www.linkedin.com/in/amirhussainshaik" target="_blank">linkedin.com/in/amirhussainshaik</a>
- 	  </p>
-       </section>
-    <!-- Footer -->
-    <footer>
-        <p>Portfolio of Amir Hussain Shaik | Powered by GitHub Pages</p>
-    </footer>
+    <p>Email: your-email@example.com</p>
+    <p>LinkedIn: Add your LinkedIn profile</p>
+    <p>Location: Riyadh / Dubai / Jeddah</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Amir Hussain Shaik | Premium Engineering Portfolio
+</footer>
+
 </body>
 </html>
