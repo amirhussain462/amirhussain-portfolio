@@ -3,227 +3,359 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Amir Hussain Shaik | Senior Electrical & Automation Engineer</title>
+
+  <meta name="description" content="Premium engineering portfolio of Amir Hussain Shaik, Senior Electrical & Automation Engineer specializing in industrial automation, material handling systems and maintenance engineering." />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{font-family:'Poppins',sans-serif;background:#0b1120;color:#fff;line-height:1.6}
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%;display:block}
 
-    .container{width:min(1200px,92%);margin:auto}
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    header{
-      position:fixed;top:0;left:0;width:100%;z-index:1000;
-      background:rgba(8,15,35,.92);backdrop-filter:blur(10px);
-      border-bottom:1px solid rgba(255,255,255,.08)
-    }
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-    nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
-    .logo{font-size:22px;font-weight:700;color:#f5c76d}
-    .nav-links{display:flex;gap:28px;font-size:15px;font-weight:500}
-    .nav-links a:hover{color:#f5c76d}
+  <!-- NETLIFY IDENTITY FIX -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-    .hero{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      background:linear-gradient(rgba(8,15,35,.82),rgba(8,15,35,.88)),url('assets/images/header-bg.jpg') center/cover;
-      padding-top:100px;
-    }
-
-    .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}
-    .tag{color:#f5c76d;font-weight:600;margin-bottom:12px}
-    h1{font-size:54px;line-height:1.1;margin-bottom:15px}
-    .subtitle{font-size:24px;color:#d9d9d9;margin-bottom:18px}
-    .hero p{font-size:17px;color:#c7c7c7;margin-bottom:28px}
-
-    .btns{display:flex;gap:16px;flex-wrap:wrap}
-    .btn{
-      padding:14px 28px;border-radius:12px;font-weight:600;
-      transition:.3s;border:1px solid transparent
-    }
-    .btn-primary{background:#f5c76d;color:#111}
-    .btn-primary:hover{transform:translateY(-2px)}
-    .btn-outline{border:1px solid #f5c76d;color:#f5c76d}
-
-    .profile-card{
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:24px;padding:20px;
-      box-shadow:0 20px 60px rgba(0,0,0,.25)
-    }
-
-    section{padding:90px 0}
-    .section-title{text-align:center;font-size:38px;margin-bottom:14px}
-    .section-sub{text-align:center;color:#c8c8c8;max-width:760px;margin:0 auto 50px}
-
-    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-    .card{
-      background:rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:20px;padding:28px
-    }
-    .stat-number{font-size:36px;font-weight:800;color:#f5c76d}
-
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-    .skill-card h3{margin-bottom:10px;color:#f5c76d}
-
-    .project-card{margin-bottom:24px}
-    .project-card h3{margin-bottom:12px;color:#f5c76d}
-
-    .timeline-item{border-left:2px solid #f5c76d;padding-left:24px;margin-bottom:28px}
-    .timeline-item h3{color:#f5c76d}
-
-    .contact-box{text-align:center}
-    footer{padding:30px 0;text-align:center;color:#aaa;border-top:1px solid rgba(255,255,255,.08)}
-
-    @media(max-width:900px){
-      .hero-grid,.grid-3,.stats{grid-template-columns:1fr}
-      h1{font-size:38px}
-      .subtitle{font-size:20px}
-      .nav-links{gap:14px;font-size:13px;flex-wrap:wrap;justify-content:flex-end}
-    }
-  </style>
 </head>
+
 <body>
 
-<header>
-  <div class="container">
-    <nav>
-      <div class="logo">Amir Portfolio</div>
-      <div class="nav-links">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <a class="brand" href="#home">
+        <span>Amir</span> Hussain
+      </a>
+
+      <button class="menu-btn" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav class="nav-links">
         <a href="#about">About</a>
-        <a href="#skills">Expertise</a>
+        <a href="#expertise">Expertise</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#certifications">Certifications</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </div>
-</header>
 
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <div class="tag">Engineering Excellence • Industrial Automation • Project Leadership</div>
-      <h1>Amir Hussain Shaik</h1>
-      <div class="subtitle">Senior Electrical & Automation Engineer</div>
-      <p>
-        Delivering high-performance engineering solutions across Saudi Arabia, UAE, and India with 10+ years of expertise in electro-mechanical systems, material handling systems, industrial automation, and mission-critical maintenance operations.
-      </p>
-      <div class="btns">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
-      </div>
+        <!-- ADMIN BUTTON FIX -->
+        <a href="https://zesty-cat-159197.netlify.app/admin/index.html">
+          Admin
+        </a>
+      </nav>
+
     </div>
+  </header>
 
-    <div class="profile-card">
-      <img src="assets/images/about_me.jpg" alt="Amir Hussain Shaik">
-    </div>
-  </div>
-</section>
+  <!-- MAIN -->
+  <main>
 
-<section id="about">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
-    <p class="section-sub">
-      Electrical & Maintenance Engineer with strong experience in conveyor systems, automated storage systems, car parking systems, cranes, ETVs, PLC troubleshooting, installation, commissioning, preventive maintenance, and project execution.
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+
+      <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+
+          <div class="eyebrow">
+            Engineering Excellence • Site Leadership • Industrial Reliability
+          </div>
+
+          <h1 id="profile-name">
+            Amir Hussain Shaik
+          </h1>
+
+          <h2 id="profile-title">
+            Senior Electrical & Automation Engineer
+          </h2>
+
+          <p id="profile-headline" class="headline"></p>
+          <p id="profile-intro" class="intro"></p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">
+              View Projects
+            </a>
+
+            <a class="btn secondary" href="#contact">
+              Contact Me
+            </a>
+
+            <a class="btn ghost"
+               href="https://zesty-cat-159197.netlify.app/admin/index.html">
+              Admin
+            </a>
+          </div>
+
+        </div>
+
+        <div class="hero-card reveal">
+
+          <img
+            id="profile-photo"
+            src="assets/images/formal-profile.jpg"
+            alt="Amir Hussain Shaik professional photo"
+          />
+
+          <div class="photo-caption">
+            Field Leadership + Technical Execution + Client Trust
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span>About</span>
+
+          <h2>
+            Built for serious engineering environments.
+          </h2>
+
+          <p id="about-text"></p>
+        </div>
+
+        <div id="stats" class="stats-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section id="expertise" class="section alt">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span>Core Expertise</span>
+
+          <h2>
+            Where technical skill meets site execution.
+          </h2>
+
+          <p>
+            Focused capabilities that support reliable operations,
+            stronger maintenance performance and successful project delivery.
+          </p>
+        </div>
+
+        <div id="expertise-list" class="cards-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span>Featured Projects</span>
+
+          <h2>
+            Practical solutions for real operational challenges.
+          </h2>
+
+          <p>
+            Project stories are presented in challenge–solution–result format
+            to show technical thinking and execution impact.
+          </p>
+        </div>
+
+        <div id="project-list" class="project-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span>Career Journey</span>
+
+          <h2>
+            Progressive hands-on engineering experience.
+          </h2>
+        </div>
+
+        <div id="experience-list" class="timeline"></div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span>Certifications</span>
+
+          <h2>
+            Continuous improvement and safety-focused learning.
+          </h2>
+        </div>
+
+        <div id="certification-list" class="cert-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section alt">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span>Gallery</span>
+
+          <h2>
+            Engineering environment, systems and site work.
+          </h2>
+
+          <p>
+            You can add new gallery images and projects later
+            from the admin page.
+          </p>
+        </div>
+
+        <div id="gallery-list" class="gallery-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+   <section id="contact" class="section contact-section">
+  <div class="container contact-card reveal">
+
+    <span>Contact</span>
+
+    <h2>
+      Let’s build reliable systems and stronger operations.
+    </h2>
+
+    <p>
+      Engineering excellence is not only about solving problems —
+      it is about building trust, reliability, and long-term
+      operational success.
     </p>
 
-    <div class="stats">
-      <div class="card"><div class="stat-number">10+</div><p>Years Experience</p></div>
-      <div class="card"><div class="stat-number">50+</div><p>Major Projects</p></div>
-      <div class="card"><div class="stat-number">100+</div><p>Critical Breakdowns Solved</p></div>
-      <div class="card"><div class="stat-number">98%</div><p>Client Satisfaction</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="skills">
-  <div class="container">
-    <h2 class="section-title">Core Expertise</h2>
-    <div class="grid-3">
-      <div class="card skill-card"><h3>Industrial Automation</h3><p>PLC systems, SCADA, controls, relay logic and troubleshooting.</p></div>
-      <div class="card skill-card"><h3>Material Handling Systems</h3><p>Conveyors, ETV, EMS, storage systems and airport logistics solutions.</p></div>
-      <div class="card skill-card"><h3>Project Execution</h3><p>Installation, commissioning, shutdown planning and site leadership.</p></div>
-      <div class="card skill-card"><h3>Client Coordination</h3><p>Technical discussions, reporting, approvals and vendor management.</p></div>
-      <div class="card skill-card"><h3>Maintenance Engineering</h3><p>Preventive, corrective and breakdown maintenance with root cause analysis.</p></div>
-      <div class="card skill-card"><h3>Lean Six Sigma</h3><p>Process optimization, downtime reduction and operational efficiency.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="container">
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="card project-card">
-      <h3>DHL Riyadh Conveyor Optimization</h3>
-      <p><strong>Challenge:</strong> Belt flipping and shipment transfer failures causing downtime.</p>
-      <p><strong>Solution:</strong> Conveyor alignment, drive correction, guide optimization and preventive maintenance strategy.</p>
-      <p><strong>Result:</strong> Stable operation restored with improved shipment flow and reduced stoppages.</p>
-    </div>
-
-    <div class="card project-card">
-      <h3>Kardex Installation & Maintenance</h3>
-      <p><strong>Scope:</strong> Installation, troubleshooting and support for automated material sorting systems.</p>
-    </div>
-  </div>
-</section>
-
-<section id="experience">
-  <div class="container">
-    <h2 class="section-title">Career Journey</h2>
-
-    <div class="timeline-item">
-      <h3>ALS Logistic Solutions – Lead Engineer</h3>
-      <p>Managing client sites, troubleshooting, installation, maintenance, team coordination and project execution across KSA & UAE.</p>
-    </div>
-
-    <div class="timeline-item">
-      <h3>EKFC – Senior Technician</h3>
-      <p>Shift handling, preventive maintenance, reporting, team leadership and system reliability support.</p>
-    </div>
-
-    <div class="timeline-item">
-      <h3>IFCG – Technician</h3>
-      <p>PLC basics, SCADA support, electrical maintenance and industrial equipment troubleshooting.</p>
-    </div>
-  </div>
-</section>
-
-<section id="certifications">
-  <div class="container">
-    <h2 class="section-title">Certifications</h2>
-    <div class="grid-3">
-      <div class="card">Lean Six Sigma Yellow Belt</div>
-      <div class="card">Lean Six Sigma Green Belt</div>
-      <div class="card">Lean Six Sigma Black Belt</div>
-      <div class="card">IOSH Managing Safely</div>
-      <div class="card">NEBOSH HSW</div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container contact-box">
-    <h2 class="section-title">Let’s Connect</h2>
-    <p class="section-sub">
-      Engineering excellence is not only about solving problems — it is about building trust, reliability, and long-term operational success.
+    <p style="margin-top: 15px; font-weight: 500;">
+      Open to leadership roles, technical management positions,
+      project execution opportunities, and high-value engineering
+      projects across GCC and international markets.
     </p>
-    <p>Email: your-email@example.com</p>
-    <p>LinkedIn: Add your LinkedIn profile</p>
-    <p>Location: Riyadh / Dubai / Jeddah</p>
+
+    <div class="contact-lines">
+
+      <!-- EMAIL -->
+      <a
+        id="email-link"
+        href="mailto:amirhussain462@gmail.com"
+      >
+        amirhussain462@gmail.com
+      </a>
+
+      <!-- PHONE -->
+      <a
+        id="phone-link"
+        href="tel:+966560668265"
+      >
+        KSA: +966 56 066 8265 | UAE: +971 54 763 7988
+      </a>
+
+      <!-- LINKEDIN -->
+      <a
+        id="linkedin-link"
+        href="https://www.linkedin.com/in/amirhussainshaik"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn Profile
+      </a>
+
+      <!-- LOCATION -->
+      <span id="location-text">
+        Riyadh, Saudi Arabia | Available for KSA, UAE &
+        International Projects
+      </span>
+
+    </div>
+
+    <!-- EXTRA ACTION BUTTONS -->
+    <div class="hero-actions" style="margin-top: 30px;">
+
+      <!-- WHATSAPP DIRECT -->
+      <a
+        class="btn primary"
+        href="https://wa.me/966560668265"
+        target="_blank"
+      >
+        WhatsApp Direct
+      </a>
+
+      <!-- DOWNLOAD CV -->
+      <a
+        class="btn secondary"
+        href="assets/files/Amir_Hussain_CV.pdf"
+        download
+      >
+        Download Resume
+      </a>
+
+    </div>
+
   </div>
 </section>
 
-<footer>
-  © 2026 Amir Hussain Shaik | Premium Engineering Portfolio
-</footer>
+  </main>
 
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      © 2026 Amir Hussain Shaik. Premium Engineering Portfolio.
+    </div>
+  </footer>
+
+  <!-- NETLIFY IDENTITY FINAL FIX -->
+<!-- MAIN JS -->
+<script src="assets/js/script.js"></script>
+
+<!-- NETLIFY IDENTITY FINAL FIX -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.init();
+
+      setTimeout(function () {
+        const hash = window.location.hash;
+
+        if (hash && hash.includes("recovery_token")) {
+          window.netlifyIdentity.open("recovery");
+        }
+
+        if (hash && (
+          hash.includes("confirmation_token") ||
+          hash.includes("invite_token")
+        )) {
+          window.netlifyIdentity.open("signup");
+        }
+      }, 1000);
+
+      window.netlifyIdentity.on("login", function () {
+        window.location.href =
+          "https://zesty-cat-159197.netlify.app/admin/index.html";
+      });
+    }
+  });
+</script>
 </body>
 </html>
