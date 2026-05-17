@@ -88,6 +88,14 @@ function render(data = {}) {
   renderList('#expertise-list', data.expertise || [], item => createEl('div', 'expertise-card reveal', `<h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.text)}</p>`));
 
   renderProjects(data.projects || []);
+renderList('#before-after-list', data.beforeAfter || [], item => createEl('article', 'before-after-card reveal', `
+  <img src="${item.image || ''}" alt="${item.title || 'Before and After Work'}">
+  <div class="before-after-body">
+    <span class="chip">${item.category || 'Technical Work'}</span>
+    <h3>${item.title || ''}</h3>
+    <p>${item.description || ''}</p>
+  </div>
+`));
 
   renderList('#experience-list', data.experience || [], item => createEl('div', 'timeline-item reveal', `
     <h3>${escapeHtml(item.role)}</h3>

@@ -207,6 +207,68 @@
       ]
     }
   ],
+"beforeAfter": [
+  {
+    "title": "Deck Lifting Cylinders Repair",
+    "category": "Hydraulic Repair",
+    "image": "assets/images/before-after/deck-lifting-cylinders-repair.png",
+    "description": "Repair and restoration of deck lifting cylinders to improve equipment reliability and lifting performance."
+  },
+  {
+    "title": "Deck Lifting Cylinders Replacement Work",
+    "category": "Hydraulic Replacement",
+    "image": "assets/images/before-after/deck-lifting-cylinders-replacement.png",
+    "description": "Replacement work carried out to restore safe lifting operation and reduce mechanical downtime."
+  },
+  {
+    "title": "ETV Current Collector Replacement",
+    "category": "Electrical / ETV System",
+    "image": "assets/images/before-after/etv-current-collector-replacement.png",
+    "description": "Current collector replacement work to improve electrical contact reliability and ETV movement stability."
+  },
+  {
+    "title": "ETV Rail Track Replacement Work",
+    "category": "Mechanical / Rail Track",
+    "image": "assets/images/before-after/etv-rail-track-replacement-1.png",
+    "description": "Rail track replacement and alignment works executed to restore safe ETV travel path and operational reliability."
+  },
+  {
+    "title": "ETV Rail Track Replacement – Before & After",
+    "category": "Mechanical Repair",
+    "image": "assets/images/before-after/etv-rail-track-replacement.png",
+    "description": "Before and after comparison showing rail track replacement progress and final restoration."
+  },
+  {
+    "title": "ETV Surveillance Camera Installation",
+    "category": "Automation / Safety",
+    "image": "assets/images/before-after/etv-surveillance-camera-installation.png",
+    "description": "Camera installation work completed to support monitoring, visibility and operational safety."
+  },
+  {
+    "title": "Preparation of Belt Conveyor",
+    "category": "Conveyor Fabrication",
+    "image": "assets/images/before-after/belt-conveyor-preparation.png",
+    "description": "Belt conveyor preparation work including frame, belt and component readiness for installation."
+  },
+  {
+    "title": "Scissor Deck Roller Motor Replacement",
+    "category": "Drive System Replacement",
+    "image": "assets/images/before-after/scissor-deck-roller-motor-replacement.png",
+    "description": "Roller motor replacement work carried out to restore scissor deck conveyor drive performance."
+  },
+  {
+    "title": "Scissor Lift Sliding Wheel Replacement",
+    "category": "Mechanical Replacement",
+    "image": "assets/images/before-after/scissor-lift-sliding-wheel-replacement.png",
+    "description": "Sliding wheel replacement completed to improve movement stability and reduce mechanical wear."
+  },
+  {
+    "title": "VFD Replacement in ETV",
+    "category": "Electrical Controls",
+    "image": "assets/images/before-after/vfd-replacement-etv.png",
+    "description": "VFD replacement, parameterizing and relay control work completed to restore reliable ETV drive operation."
+  }
+],
   "experience": [
     {
       "role": "Senior Electrical & Automation Engineer | Project Execution Lead",
