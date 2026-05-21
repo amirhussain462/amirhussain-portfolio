@@ -17,7 +17,6 @@ const DEFAULT_PROFILE = {
 
 let SITE_DATA = {};
 let currentProjectIndex = 0;
-let currentMediaIndex = 0;
 
 function safeSetText(selector, text) {
   const node = $(selector);
@@ -88,14 +87,6 @@ function render(data = {}) {
   renderList('#expertise-list', data.expertise || [], item => createEl('div', 'expertise-card reveal', `<h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.text)}</p>`));
 
   renderProjects(data.projects || []);
-renderList('#before-after-list', data.beforeAfter || [], item => createEl('article', 'before-after-card reveal', `
-  <img src="${item.image || ''}" alt="${item.title || 'Before and After Work'}">
-  <div class="before-after-body">
-    <span class="chip">${item.category || 'Technical Work'}</span>
-    <h3>${item.title || ''}</h3>
-    <p>${item.description || ''}</p>
-  </div>
-`));
 
   renderList('#experience-list', data.experience || [], item => createEl('div', 'timeline-item reveal', `
     <h3>${escapeHtml(item.role)}</h3>
@@ -106,10 +97,6 @@ renderList('#before-after-list', data.beforeAfter || [], item => createEl('artic
     <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}">
     <h3>${escapeHtml(item.title)}</h3>
     <a href="${escapeHtml(item.file)}" target="_blank" rel="noopener">View Certificate</a>`));
-
-  renderList('#gallery-list', data.gallery || [], item => createEl('div', 'gallery-item reveal', `
-    <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}">
-    <h3>${escapeHtml(item.title)}</h3>`));
 
   safeSetHref('#email-link', `mailto:${p.email || DEFAULT_PROFILE.email}`);
   safeSetText('#email-link', p.email || DEFAULT_PROFILE.email);
@@ -132,6 +119,7 @@ function renderProjects(projects) {
 
   projects.forEach((item, index) => {
     const cover = item.coverImage || item.image || (item.media && item.media[0] && item.media[0].src) || 'assets/images/header-bg.jpg';
+    const mediaCount = item.media ? item.media.length : 0;
     const card = createEl('article', 'project-card reveal', `
       <img src="${escapeHtml(cover)}" alt="${escapeHtml(item.title || 'Project')}">
       <div class="project-body project-summary">
@@ -141,9 +129,9 @@ function renderProjects(projects) {
           ${item.location ? `<span>${escapeHtml(item.location)}</span>` : ''}
           ${item.date ? `<span>${escapeHtml(item.date)}</span>` : ''}
           ${item.role ? `<span>${escapeHtml(item.role)}</span>` : ''}
+          ${mediaCount ? `<span>${mediaCount} media files</span>` : ''}
         </div>
         <p><span class="label">Challenge:</span> ${escapeHtml(item.challenge || '')}</p>
-        <p><span class="label">Solution:</span> ${escapeHtml(item.solution || '')}</p>
         <p><span class="label">Result:</span> ${escapeHtml(item.result || '')}</p>
       </div>
       <div class="project-actions">
@@ -169,7 +157,6 @@ function openProjectModal(index) {
   const project = projects[index];
   if (!project) return;
   currentProjectIndex = index;
-  currentMediaIndex = 0;
   renderProjectModal(project);
   const modal = $('#project-modal');
   if (modal) {
@@ -191,7 +178,9 @@ function closeProjectModal() {
 function renderProjectModal(project) {
   const modalContent = $('#modal-content');
   if (!modalContent) return;
-  const media = project.media && project.media.length ? project.media : [{ type: 'image', src: project.coverImage || project.image || 'assets/images/header-bg.jpg', title: project.title }];
+  const media = project.media && project.media.length
+    ? project.media
+    : [{ type: 'image', src: project.coverImage || project.image || 'assets/images/header-bg.jpg', title: project.title }];
 
   modalContent.innerHTML = `
     <div class="modal-header">
@@ -234,7 +223,6 @@ function listCard(title, list) {
 }
 
 function renderMedia(project, media, activeIndex) {
-  currentMediaIndex = activeIndex;
   const active = media[activeIndex] || media[0];
   const main = $('#modal-main-media');
   const thumbs = $('#modal-thumbs');

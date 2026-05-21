@@ -101,6 +101,84 @@
       ]
     },
     {
+      "title": "ETV, Conveyor & Material Handling Technical Improvements",
+      "category": "Maintenance / Retrofit / Before & After",
+      "client": "Major Logistics & Industrial Facilities",
+      "location": "UAE & KSA",
+      "date": "Selected Technical Works",
+      "role": "Lead Engineer / Site Execution & Troubleshooting",
+      "coverImage": "assets/images/before-after/vfd-replacement-etv.png",
+      "overview": "A consolidated project showcase of practical corrective maintenance, component replacement, fabrication, installation and before/after improvement works across material handling and automation systems.",
+      "challenge": "Multiple live operational systems required safe repair, replacement and restoration work while minimizing downtime and maintaining operational reliability.",
+      "rootCause": "Issues included worn mechanical components, failed drive/control components, damaged rails, hydraulic wear, conveyor preparation requirements and site execution constraints.",
+      "solution": "Carried out structured inspection, replacement, parameterization, fabrication, installation, alignment, testing and handover support based on site conditions and operational priority.",
+      "result": "Restored safe operation, improved equipment reliability and supported continuous operation of critical material handling systems.",
+      "technicalScope": [
+        "Hydraulic cylinder repair and replacement",
+        "ETV current collector and rail track replacement",
+        "VFD replacement and parameterization",
+        "Camera installation and monitoring support",
+        "Belt conveyor preparation and mechanical replacement works"
+      ],
+      "safety": [
+        "Work near live logistics and material handling systems",
+        "Controlled isolation and testing before handover",
+        "Safe execution around mechanical, electrical and moving equipment"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/before-after/deck-lifting-cylinders-repair.png",
+          "title": "Deck Lifting Cylinders Repair"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/before-after/deck-lifting-cylinders-replacement.png",
+          "title": "Deck Lifting Cylinders Replacement Work"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/before-after/etv-current-collector-replacement.png",
+          "title": "ETV Current Collector Replacement"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/before-after/etv-rail-track-replacement-1.png",
+          "title": "ETV Rail Track Replacement Work"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/before-after/etv-rail-track-replacement.png",
+          "title": "ETV Rail Track Replacement – Before & After"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/before-after/etv-surveillance-camera-installation.png",
+          "title": "ETV Surveillance Camera Installation"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/before-after/belt-conveyor-preparation.png",
+          "title": "Preparation of Belt Conveyor"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/before-after/scissor-deck-roller-motor-replacement.png",
+          "title": "Scissor Deck Roller Motor Replacement"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/before-after/scissor-lift-sliding-wheel-replacement.png",
+          "title": "Scissor Lift Sliding Wheel Replacement"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/before-after/vfd-replacement-etv.png",
+          "title": "VFD Replacement in ETV"
+        }
+      ]
+    },
+    {
       "title": "Kardex Automated Sorting System Support",
       "category": "Automated Storage / Sorting",
       "client": "SANAD Aerotech",
@@ -207,68 +285,6 @@
       ]
     }
   ],
-"beforeAfter": [
-  {
-    "title": "Deck Lifting Cylinders Repair",
-    "category": "Hydraulic Repair",
-    "image": "assets/images/before-after/deck-lifting-cylinders-repair.png",
-    "description": "Repair and restoration of deck lifting cylinders to improve equipment reliability and lifting performance."
-  },
-  {
-    "title": "Deck Lifting Cylinders Replacement Work",
-    "category": "Hydraulic Replacement",
-    "image": "assets/images/before-after/deck-lifting-cylinders-replacement.png",
-    "description": "Replacement work carried out to restore safe lifting operation and reduce mechanical downtime."
-  },
-  {
-    "title": "ETV Current Collector Replacement",
-    "category": "Electrical / ETV System",
-    "image": "assets/images/before-after/etv-current-collector-replacement.png",
-    "description": "Current collector replacement work to improve electrical contact reliability and ETV movement stability."
-  },
-  {
-    "title": "ETV Rail Track Replacement Work",
-    "category": "Mechanical / Rail Track",
-    "image": "assets/images/before-after/etv-rail-track-replacement-1.png",
-    "description": "Rail track replacement and alignment works executed to restore safe ETV travel path and operational reliability."
-  },
-  {
-    "title": "ETV Rail Track Replacement – Before & After",
-    "category": "Mechanical Repair",
-    "image": "assets/images/before-after/etv-rail-track-replacement.png",
-    "description": "Before and after comparison showing rail track replacement progress and final restoration."
-  },
-  {
-    "title": "ETV Surveillance Camera Installation",
-    "category": "Automation / Safety",
-    "image": "assets/images/before-after/etv-surveillance-camera-installation.png",
-    "description": "Camera installation work completed to support monitoring, visibility and operational safety."
-  },
-  {
-    "title": "Preparation of Belt Conveyor",
-    "category": "Conveyor Fabrication",
-    "image": "assets/images/before-after/belt-conveyor-preparation.png",
-    "description": "Belt conveyor preparation work including frame, belt and component readiness for installation."
-  },
-  {
-    "title": "Scissor Deck Roller Motor Replacement",
-    "category": "Drive System Replacement",
-    "image": "assets/images/before-after/scissor-deck-roller-motor-replacement.png",
-    "description": "Roller motor replacement work carried out to restore scissor deck conveyor drive performance."
-  },
-  {
-    "title": "Scissor Lift Sliding Wheel Replacement",
-    "category": "Mechanical Replacement",
-    "image": "assets/images/before-after/scissor-lift-sliding-wheel-replacement.png",
-    "description": "Sliding wheel replacement completed to improve movement stability and reduce mechanical wear."
-  },
-  {
-    "title": "VFD Replacement in ETV",
-    "category": "Electrical Controls",
-    "image": "assets/images/before-after/vfd-replacement-etv.png",
-    "description": "VFD replacement, parameterizing and relay control work completed to restore reliable ETV drive operation."
-  }
-],
   "experience": [
     {
       "role": "Senior Electrical & Automation Engineer | Project Execution Lead",
@@ -299,60 +315,6 @@
       "title": "IOSH / NEBOSH HSW",
       "file": "assets/certificates/IOSH-MS-and-NEBOSH-HSW-certificates.pdf",
       "image": "assets/images/cert-iosh-nebosh.jpg"
-    }    
-  ],
-  "gallery": [
-    {
-      "title": "Conveyor Systems",
-      "image": "assets/images/conveyor2.jpg"
-    },
-    {
-      "title": "Conveyor & Automation Line",
-      "image": "assets/images/conveyor3.jpg"
-    },
-    {
-      "title": "Kardex / Storage Systems",
-      "image": "assets/images/kardex2.jpg"
-    },
-    {
-      "title": "Automated Storage Area",
-      "image": "assets/images/kardex3.jpg"
-    },
-    {
-      "title": "Site Management",
-      "image": "assets/images/site_management1.jpg"
-    },
-    {
-      "title": "Site Technical Work",
-      "image": "assets/images/site_management2.jpg"
-    },
-    {
-      "title": "Control Panels & Electrical Systems",
-      "image": "assets/images/site_management3.jpg"
-    },
-    {
-      "title": "Car Parking Systems",
-      "image": "assets/images/car_parking1.jpg"
-    },
-    {
-      "title": "Car Parking Installation",
-      "image": "assets/images/car_parking2.jpg"
-    },
-    {
-      "title": "Parking System Site Work",
-      "image": "assets/images/car_parking3.jpg"
-    },
-    {
-      "title": "Car Turntable System",
-      "image": "assets/images/car_turntable2.jpg"
-    },
-    {
-      "title": "Car Turntable Installation",
-      "image": "assets/images/car_turntable3.jpg"
-    },
-    {
-      "title": "Engineering Site Experience",
-      "image": "assets/images/experience1.jpg"
     }
   ]
 }
