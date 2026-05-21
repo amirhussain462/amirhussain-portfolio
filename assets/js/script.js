@@ -188,7 +188,7 @@ function renderProjectModal(project) {
       <h2 id="modal-title">${escapeHtml(project.title || '')}</h2>
       <p class="modal-sub">${escapeHtml(project.overview || '')}</p>
       <div class="project-meta">
-        ${project.client ? `<span>Client / Site: ${escapeHtml(project.client)}</span>` : ''}
+        ${project.client ? `<span>Project Environment: ${escapeHtml(project.client)}</span>` : ''}
         ${project.location ? `<span>Location: ${escapeHtml(project.location)}</span>` : ''}
         ${project.date ? `<span>Date: ${escapeHtml(project.date)}</span>` : ''}
         ${project.role ? `<span>Role: ${escapeHtml(project.role)}</span>` : ''}

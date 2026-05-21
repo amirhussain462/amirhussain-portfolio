@@ -59,15 +59,15 @@
   ],
   "projects": [
     {
-      "title": "DHL Riyadh Conveyor Optimization",
+      "title": "Airport Logistics Conveyor Optimization",
       "category": "Conveyor Systems",
-      "client": "DHL Riyadh Gateway",
-      "location": "Riyadh, Saudi Arabia",
+      "client": "Major Airport Logistics Facility",
+      "location": "Saudi Arabia",
       "date": "2025–2026",
       "role": "Lead Engineer / Site Execution Support",
       "coverImage": "assets/images/conveyor1.jpg",
-      "overview": "Conveyor optimization and reliability improvement activity carried out in a live logistics and customs-controlled operational environment.",
-      "challenge": "Shipment transfer instability, belt tracking issues and operational downtime risk.",
+      "overview": "Conveyor optimization and reliability improvement activity carried out in a live logistics and controlled operational environment.",
+      "challenge": "Shipment transfer instability, belt tracking issues and operational downtime risk in a high-volume logistics environment.",
       "rootCause": "Belt path instability, shipment loading behavior, guide arrangement and alignment conditions were affecting smooth transfer and long-term stability.",
       "solution": "Corrected conveyor alignment, reviewed drive behavior, optimized guide/support arrangement, coordinated belt replacement and supported preventive maintenance planning.",
       "result": "Improved operational stability, reduced stoppages and strengthened system reliability for live logistics operations.",
@@ -79,7 +79,7 @@
       ],
       "safety": [
         "Live logistics operation",
-        "Customs-controlled area",
+        "Controlled operational area",
         "Work execution under restricted operational timelines"
       ],
       "media": [
@@ -101,18 +101,18 @@
       ]
     },
     {
-      "title": "ETV, Conveyor & Material Handling Technical Improvements",
+      "title": "Material Handling System Technical Improvements",
       "category": "Maintenance / Retrofit / Before & After",
-      "client": "Major Logistics & Industrial Facilities",
-      "location": "UAE & KSA",
+      "client": "Automated Material Handling Facility",
+      "location": "GCC Region",
       "date": "Selected Technical Works",
       "role": "Lead Engineer / Site Execution & Troubleshooting",
       "coverImage": "assets/images/before-after/vfd-replacement-etv.png",
-      "overview": "A consolidated project showcase of practical corrective maintenance, component replacement, fabrication, installation and before/after improvement works across material handling and automation systems.",
-      "challenge": "Multiple live operational systems required safe repair, replacement and restoration work while minimizing downtime and maintaining operational reliability.",
-      "rootCause": "Issues included worn mechanical components, failed drive/control components, damaged rails, hydraulic wear, conveyor preparation requirements and site execution constraints.",
-      "solution": "Carried out structured inspection, replacement, parameterization, fabrication, installation, alignment, testing and handover support based on site conditions and operational priority.",
-      "result": "Restored safe operation, improved equipment reliability and supported continuous operation of critical material handling systems.",
+      "overview": "A collection of practical engineering improvements, replacements, repairs and installation works completed across automated material handling systems.",
+      "challenge": "Multiple equipment conditions required fast diagnosis, replacement, repair and restoration while maintaining safe operational readiness.",
+      "rootCause": "Wear, electrical/control component aging, mechanical alignment conditions and operational usage created reliability concerns across different system areas.",
+      "solution": "Executed component replacement, mechanical repair, electrical/control troubleshooting, VFD replacement, camera installation and conveyor preparation works.",
+      "result": "Improved system reliability, reduced repeat faults and supported safer equipment operation through structured execution and technical follow-up.",
       "technicalScope": [
         "Hydraulic cylinder repair and replacement",
         "ETV current collector and rail track replacement",
@@ -121,9 +121,10 @@
         "Belt conveyor preparation and mechanical replacement works"
       ],
       "safety": [
-        "Work near live logistics and material handling systems",
-        "Controlled isolation and testing before handover",
-        "Safe execution around mechanical, electrical and moving equipment"
+        "Operational site coordination",
+        "Electrical isolation and safe work practices",
+        "Mechanical handling and lifting safety",
+        "Controlled testing before handover"
       ],
       "media": [
         {
@@ -179,10 +180,10 @@
       ]
     },
     {
-      "title": "Kardex Automated Sorting System Support",
+      "title": "Automated Sorting System Installation Support",
       "category": "Automated Storage / Sorting",
-      "client": "SANAD Aerotech",
-      "location": "Abu Dhabi, UAE",
+      "client": "Aerospace / Industrial Facility",
+      "location": "United Arab Emirates",
       "date": "Project Support Phase",
       "role": "Installation & Commissioning Support",
       "coverImage": "assets/images/kardex1.jpg",
@@ -206,12 +207,12 @@
         {
           "type": "image",
           "src": "assets/images/kardex1.jpg",
-          "title": "Kardex automated sorting system"
+          "title": "Automated sorting automated sorting system"
         },
         {
           "type": "image",
           "src": "assets/images/kardex2.jpg",
-          "title": "Kardex installation area"
+          "title": "Automated sorting installation area"
         },
         {
           "type": "image",
@@ -221,10 +222,10 @@
       ]
     },
     {
-      "title": "Automated Car Parking & Turntable Systems",
+      "title": "Automated Parking & Turntable Systems",
       "category": "Car Parking Solutions",
-      "client": "Private Villas / Commercial Sites",
-      "location": "UAE & KSA",
+      "client": "Private Residential / Commercial Sites",
+      "location": "UAE & Saudi Arabia",
       "date": "Multiple Projects",
       "role": "Installation, Commissioning & Maintenance Lead",
       "coverImage": "assets/images/car_turntable1.jpg",
